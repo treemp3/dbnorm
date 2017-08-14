@@ -4,3 +4,7 @@ field:
     id: 
         type: string
         size: 128
+    standard_addr:
+        type: string
+        size: 256
+        comment: 标准地址
