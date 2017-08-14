@@ -1,0 +1,6 @@
+table: house
+comment: 房屋表
+field:
+    id: 
+        type: string
+        size: 128
