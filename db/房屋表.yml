@@ -8,3 +8,72 @@ field:
         type: string
         size: 256
         comment: 标准地址
+    detail_addr:
+        type: string
+        size: 256
+        comment: 详细地址
+    house_type:
+        type: string
+        size: 16
+        comment: 户型
+    area:
+        type: decimal
+        size: 3
+        scale: 2
+        comment: 面积
+    purpose:
+        type: string
+        size: 16
+        comment: 房屋用途（性质）
+    rental:
+        type: string
+        size: 16
+        comment: 租赁状态
+    room_sum:
+        type: integer
+        size: 3
+        comment: 房间数
+    village_id:
+        type: string
+        size: 128
+        comment: 小区ID
+    village_name:
+        type: string
+        size: 64
+        comment: 小区名称
+    building_no:
+        type: string
+        size: 16
+        comment: 楼栋号
+    unit_no:
+        type: string
+        size: 16
+        comment: 单元号
+    floor_no:
+        type: string
+        size: 16
+        comment: 楼层号
+    room_no:
+        type: string
+        size: 16
+        comment: 室号
+    user_id:
+        type: string
+        size: 128
+        comment: 业主ID
+    user_name:
+        type: string
+        size: 64
+        comment: 业主姓名
+    user_id_type:
+        type: string
+        size: 32
+        comment: 证件类型
+    user_id_no:
+        type: string
+        size: 32
+        comment: 证件号码
+    create_timestamp:
+        type: timestamp
+    update_timestamp:
+        type: timestamp
