@@ -12,10 +12,6 @@ field:
         type: string
         size: 16
         comment: 号牌类型
-    house_type:
-        type: string
-        size: 16
-        comment: 户型
     type:
         type: string
         size: 16
