@@ -14,7 +14,7 @@
 - 不要使用单词复数，也不要使用数字，除下划线外不要使用其他特殊字符。
 - 尽量不要使用英文缩写，ip/url等常见的除外。
 - 数据表中建议含有id字段，string类型，128长度，主键。
-- 数据表中建议含有create_timestamp/update_timestamp字段，timestamp类型。
+- 数据表中建议含有insert_timestamp/update_timestamp字段，timestamp类型。
 - 外键或引用外部数据表的字段时，命名方式为：外部数据表名+下划线+外部字段名，如：user_id/order_price。
 
 # 字段类型（type）
@@ -29,7 +29,7 @@
 - 字符串型字段1-1024
 
 # 禁止空值
-- 除text类型、时间戳类型字段外，其他类型字段禁止null值，需设置为not null。
+- 除text类型、timestamp类型字段外，其他类型字段禁止null值，需设置为not null。
 
 # 字段默认值（default）
 - 数字型字段默认为：0
