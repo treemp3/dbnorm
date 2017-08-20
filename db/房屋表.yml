@@ -73,7 +73,7 @@ field:
         type: string
         size: 32
         comment: 证件号码
-    create_timestamp:
+    insert_timestamp:
         type: timestamp
     update_timestamp:
         type: timestamp
