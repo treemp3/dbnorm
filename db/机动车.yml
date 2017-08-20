@@ -1,0 +1,54 @@
+table: motor_vehicle
+comment: 机动车表（汽车表）
+field:
+    id: 
+        type: string
+        size: 128
+    plate_no:
+        type: string
+        size: 16
+        comment: 车牌号
+    plate_type:
+        type: string
+        size: 16
+        comment: 号牌类型
+    house_type:
+        type: string
+        size: 16
+        comment: 户型
+    type:
+        type: string
+        size: 16
+        comment: 车辆类型
+    brand:
+        type: string
+        size: 16
+        comment: 车辆品牌
+    model:
+        type: string
+        size: 16
+        comment: 车辆型号
+    color:
+        type: string
+        size: 16
+        comment: 车身颜色
+    photo:
+        type: string
+        size: 256
+        comment: 车辆照片
+    user_id:
+        type: string
+        size: 128
+        comment: 车主ID
+    user_name:
+        type: string
+        size: 32
+        comment: 车主姓名
+    user_phone:
+        type: string
+        size: 16
+        comment: 车主电话
+    insert_timestamp:
+        type: timestamp
+    update_timestamp:
+        type: timestamp
