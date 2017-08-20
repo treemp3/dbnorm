@@ -1,0 +1,62 @@
+table: citizen
+comment: 居民表（市民表、人员表）
+field:
+    id: 
+        type: string
+        size: 128
+    name:
+        type: string
+        size: 64
+        comment: 姓名
+    phone:
+        type: string
+        size: 16
+        comment: 电话
+    photo:
+        type: string
+        size: 256
+        comment: 近照
+    gender:
+        type: integer
+        size: 1
+        comment: 性别
+    birthday:
+        type: string
+        size: 16
+        comment: 出生日期（生日）
+    nation:
+        type: string
+        size: 64
+        comment: 民族
+    political_status:
+        type: string
+        size: 16
+        comment: 政治面貌
+    education:
+        type: string
+        size: 16
+        comment: 文化程度（学历）
+    occupation:
+        type: string
+        size: 16
+        comment: 职业
+    id_type:
+        type: string
+        size: 16
+        comment: 证件类型
+    id_no:
+        type: string
+        size: 16
+        comment: 证件号码
+    id_addr:
+        type: string
+        size: 256
+        comment: 证件地址
+    id_photo:
+        type: string
+        size: 256
+        comment: 证件照
+    create_timestamp:
+        type: timestamp
+    update_timestamp:
+        type: timestamp
