@@ -1,0 +1,50 @@
+table: plan_task
+comment: 计划任务表
+field:
+    id:
+        type: string
+        size: 64
+    job_name:
+        type: string
+        size: 64
+        comment: 计划任务名称
+    callback:
+        type: string
+        size: 1024
+        comment: 任务回调地址
+    year:
+        type: integer
+        size: 4
+        comment: 年（4位数）
+    month:
+        type: integer
+        size: 2
+        comment: 月（1-12）
+    day:
+        type: integer
+        size: 2
+        comment: 日（1-31）
+    week:
+        type: integer
+        size: 2
+        comment: 周（1-53）
+    day_of_week:
+        type: integer
+        size: 1
+        comment: 周几（0-6）
+    hour:
+        type: integer
+        size: 2
+        comment: 时（0-23）
+    minute:
+        type: integer
+        size: 2
+        comment: 分（0-59）
+    second:
+        type: integer
+        size: 2
+        comment: 秒（0-59）
+    create_time:
+        type: timestamp
+    update_time:
+        type: timestamp
