@@ -44,6 +44,10 @@ field:
         type: integer
         size: 2
         comment: 秒（0-59）
+    is_del:
+        type: integer
+        size: 1
+        comment: 是否删除
     create_time:
         type: timestamp
     update_time:
