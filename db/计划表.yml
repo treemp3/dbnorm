@@ -13,36 +13,36 @@ field:
         size: 1024
         comment: 任务回调地址
     year:
-        type: integer
-        size: 4
-        comment: 年（4位数）
+        type: string
+        size: 32
+        comment: 年（4位数或*）
     month:
-        type: integer
-        size: 2
+        type: string
+        size: 32
         comment: 月（1-12）
     day:
-        type: integer
-        size: 2
+        type: string
+        size: 32
         comment: 日（1-31）
     week:
-        type: integer
-        size: 2
+        type: string
+        size: 32
         comment: 周（1-53）
     day_of_week:
-        type: integer
-        size: 1
+        type: string
+        size: 32
         comment: 周几（0-6）
     hour:
-        type: integer
-        size: 2
+        type: string
+        size: 32
         comment: 时（0-23）
     minute:
-        type: integer
-        size: 2
+        type: string
+        size: 32
         comment: 分（0-59）
     second:
-        type: integer
-        size: 2
+        type: string
+        size: 32
         comment: 秒（0-59）
     is_del:
         type: integer
