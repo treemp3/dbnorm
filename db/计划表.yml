@@ -44,6 +44,14 @@ field:
         type: string
         size: 32
         comment: 秒（0-59）
+    start_date:
+        type: string
+        size: 32
+        comment: 开始日期
+    end_date:
+        type: string
+        size: 32
+        comment: 结束日期
     is_del:
         type: integer
         size: 1
