@@ -12,6 +12,10 @@ field:
         type: string
         size: 1024
         comment: 任务回调地址
+    job_desc:
+        type: string
+        size: 1024
+        comment: 计划任务描述
     year:
         type: string
         size: 32
