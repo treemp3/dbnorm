@@ -56,6 +56,10 @@ field:
         type: string
         size: 32
         comment: 结束日期
+    is_disable:
+        type: integer
+        size: 1
+        comment: 是否禁用
     is_del:
         type: integer
         size: 1
