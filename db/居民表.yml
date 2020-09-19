@@ -3,10 +3,10 @@ comment: 居民表（市民表、人员表）
 field:
     id: 
         type: string
-        size: 128
+        size: 64
     name:
         type: string
-        size: 64
+        size: 16
         comment: 姓名
     phone:
         type: string
@@ -26,7 +26,7 @@ field:
         comment: 出生日期（生日）
     nation:
         type: string
-        size: 64
+        size: 16
         comment: 民族
     political_status:
         type: string
@@ -56,7 +56,7 @@ field:
         type: string
         size: 256
         comment: 证件照
-    insert_timestamp:
+    create_timestamp:
         type: timestamp
     update_timestamp:
         type: timestamp
