@@ -15,7 +15,7 @@
 - 尽量不要使用英文缩写，ip/url等常见的除外。
 - 数据表中建议含有id字段，string类型，64长度，主键。
 - 数据表中建议含有create_time/update_time字段，timestamp类型。
-- 外键或引用外部数据表的字段时，命名方式为：外部数据表名+下划线+外部字段名，如：user_id/order_price。
+- 外键或引用外部数据表的字段时，命名方式为：外部数据表名+下划线+外部字段名，如：user_id或order_price。
 - 可根据需要建立is_del/is_check等类似的字段，integer类型，长度为1。
 
 # 字段类型（type）
