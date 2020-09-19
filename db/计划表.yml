@@ -18,43 +18,43 @@ field:
         comment: 计划任务描述
     year:
         type: string
-        size: 32
+        size: 4
         comment: 年（4位数或*）
     month:
         type: string
-        size: 32
+        size: 2
         comment: 月（1-12）
     day:
         type: string
-        size: 32
+        size: 2
         comment: 日（1-31）
     week:
         type: string
-        size: 32
+        size: 2
         comment: 周（1-53）
     day_of_week:
         type: string
-        size: 32
+        size: 2
         comment: 周几（0-6）
     hour:
         type: string
-        size: 32
+        size: 2
         comment: 时（0-23）
     minute:
         type: string
-        size: 32
+        size: 2
         comment: 分（0-59）
     second:
         type: string
-        size: 32
+        size: 2
         comment: 秒（0-59）
     start_date:
         type: string
-        size: 32
+        size: 24
         comment: 开始日期
     end_date:
         type: string
-        size: 32
+        size: 24
         comment: 结束日期
     is_disable:
         type: integer
