@@ -3,10 +3,10 @@ comment: 机动车表（汽车表）
 field:
     id: 
         type: string
-        size: 128
+        size: 64
     plate_no:
         type: string
-        size: 16
+        size: 8
         comment: 车牌号
     plate_type:
         type: string
@@ -34,7 +34,7 @@ field:
         comment: 车辆照片
     user_id:
         type: string
-        size: 128
+        size: 64
         comment: 车主ID
     user_name:
         type: string
@@ -44,7 +44,7 @@ field:
         type: string
         size: 16
         comment: 车主电话
-    insert_timestamp:
+    create_timestamp:
         type: timestamp
     update_timestamp:
         type: timestamp
