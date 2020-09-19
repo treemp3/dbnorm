@@ -18,7 +18,7 @@ field:
         comment: 户型
     area:
         type: decimal
-        size: 3
+        size: 5
         scale: 2
         comment: 面积
     purpose:
