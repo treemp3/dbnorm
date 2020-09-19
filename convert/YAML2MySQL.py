@@ -31,6 +31,9 @@ def parse(table_name):
     for field_name, field_attr in data['field'].items():
         # print(field_name, field_attr)
         field_type = field_type_dict[field_attr['type']]
+        if field_type == 'int' and field_attr['size'] == 1:
+            # boolean type
+            field_type = 'tinyint'
 
         field_scale = ',' + str(field_attr['scale']) \
             if field_attr['type'] == 'decimal' and 'scale' in field_attr else ''
