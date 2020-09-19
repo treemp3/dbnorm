@@ -3,7 +3,7 @@ comment: 房屋表
 field:
     id: 
         type: string
-        size: 128
+        size: 64
     standard_addr:
         type: string
         size: 256
@@ -35,7 +35,7 @@ field:
         comment: 房间数
     village_id:
         type: string
-        size: 128
+        size: 64
         comment: 小区ID
     village_name:
         type: string
@@ -59,7 +59,7 @@ field:
         comment: 室号
     user_id:
         type: string
-        size: 128
+        size: 64
         comment: 业主ID
     user_name:
         type: string
@@ -73,7 +73,7 @@ field:
         type: string
         size: 32
         comment: 证件号码
-    insert_timestamp:
+    create_timestamp:
         type: timestamp
     update_timestamp:
         type: timestamp
