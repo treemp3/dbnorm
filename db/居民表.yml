@@ -56,7 +56,7 @@ field:
         type: string
         size: 256
         comment: 证件照
-    create_timestamp:
+    create_time:
         type: timestamp
-    update_timestamp:
+    update_time:
         type: timestamp

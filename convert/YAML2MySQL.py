@@ -5,16 +5,16 @@ Convert yml to sql. Support Mysql5.6+
 """
 import yaml
 
-table_dict = ['house']
+table_list = ['房屋表', '居民表', '机动车', '计划表']
 template_table = '''
 CREATE TABLE `{table_name}` (
 {field_list_str}
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='{table_comment}';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='{table_comment}';
 '''
-template_field = '`{field_name}` {field_type}{field_size} {field_notnull} {field_comment},\n'
+template_field = '`{field_name}` {field_type}{field_size} {field_notnull} {field_default} {field_comment},\n'
 field_type_dict = {
     'integer': 'int',
-    'decimal': 'decimal',
+    'decimal': 'float',
     'string': 'varchar',
     'text': 'text',
     'timestamp': 'timestamp'
@@ -42,19 +42,33 @@ def parse(table_name):
 
         field_notnull = 'NOT NULL' if field_attr['type'] not in ['text', 'timestamp'] else 'NULL'
 
+        field_default = 'DEFAULT '
+        if field_attr['type'] == 'string' and field_name != 'id':
+            # 非主键的字符串字段的默认值为''
+            field_default += '\'\''
+        elif field_attr['type'] in ('integer', 'decimal'):
+            # 数字字段的默认值为0
+            field_default += '0'
+        elif field_name == 'create_time':
+            field_default += 'CURRENT_TIMESTAMP'
+        elif field_name == 'update_time':
+            # mysql同一个表中不能有两个字段默认值是当前时间
+            field_default += 'NULL ON UPDATE CURRENT_TIMESTAMP'
+        elif field_name == 'id':
+            field_default = 'PRIMARY KEY'
+
         field_comment = 'COMMENT \'' + field_attr['comment'] + '\'' if 'comment' in field_attr else ''
 
         field_dict = {'field_name': field_name, 'field_type': field_type, 'field_size': field_size,
-                      'field_notnull': field_notnull, 'field_comment': field_comment}
+                      'field_notnull': field_notnull, 'field_default': field_default, 'field_comment': field_comment}
         field_list_str += '    ' + template_field.format(**field_dict)
-
-    field_list_str = field_list_str[0:-2]  # remove the last \n and ,
+    field_list_str = field_list_str.rstrip('\n,')
     sql = template_table.format(table_name=data['table'], field_list_str=field_list_str, table_comment=data['comment'])
     print(sql)
-    with open("../db/sql.txt", "w", encoding='utf-8') as sqlFile:
+    with open("../db/sql.txt", "a", encoding='utf-8') as sqlFile:
         sqlFile.write(sql)
 
 
 if __name__ == '__main__':
-    for table in table_dict:
+    for table in table_list:
         parse(table)
