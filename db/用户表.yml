@@ -1,0 +1,36 @@
+table: user
+comment: 用户表
+field:
+    id:
+        type: string
+        size: 64
+    mobile:
+        type: string
+        size: 16
+        comment: 手机号
+    nick_name:
+        type: string
+        size: 32
+        comment: 昵称
+    real_name:
+        type: string
+        size: 32
+        comment: 姓名
+    icon:
+        type: string
+        size: 1024
+        comment: 头像
+    status:
+        type: integer
+        size: 1
+        comment: 状态（0正常 1禁用）
+    del_flag:
+        type: integer
+        size: 1
+        comment: 删除标记（0正常 1删除）
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 修改时间

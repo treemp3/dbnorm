@@ -1,0 +1,68 @@
+table: recommend
+comment: 推荐表
+field:
+    id:
+        type: string
+        size: 64
+    job_id:
+        type: string
+        size: 64
+        comment: 职位编号
+    job_title:
+        type: string
+        size: 256
+        comment: 职位标题
+    obj_id:
+        type: string
+        size: 64
+        comment: 推荐对象
+    obj_mobile:
+        type: string
+        size: 16
+        comment: 对象手机号
+    obj_name:
+        type: string
+        size: 32
+        comment: 对象姓名
+    obj_remark:
+        type: string
+        size: 256
+        comment: 推荐评语
+    obj_resume:
+        type: string
+        size: 1024
+        comment: 对象简历
+    status:
+        type: integer
+        size: 1
+        comment: 状态（0未面试 1成功 2失败）
+    del_flag:
+        type: integer
+        size: 1
+        comment: 删除标记（0正常 1删除）
+    create_by:
+        type: string
+        size: 64
+        comment: 推荐人
+    create_name:
+        type: string
+        size: 32
+        comment: 推荐人姓名
+    create_time:
+        type: timestamp
+        comment: 推荐时间
+    update_by:
+        type: string
+        size: 64
+        comment: 修改人
+    update_name:
+        type: string
+        size: 32
+        comment: 修改人姓名
+    update_remark:
+        type: string
+        size: 128
+        comment: 修改人备注
+    update_time:
+        type: timestamp
+        comment: 修改时间

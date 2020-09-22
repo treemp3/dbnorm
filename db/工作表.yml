@@ -6,7 +6,7 @@ field:
         size: 64
     job_title:
         type: string
-        size: 1024
+        size: 256
         comment: 工作标题
     job_desc:
         type: text
@@ -34,17 +34,17 @@ field:
         type: string
         size: 64
         comment: 创建人
-    create_time:
-        type: timestamp
-        comment: 创建时间
     create_name:
         type: string
         size: 32
         comment: 创建人昵称
     create_icon:
         type: string
-        size: 256
+        size: 1024
         comment: 创建人头像
+    create_time:
+        type: timestamp
+        comment: 创建时间
     update_by:
         type: string
         size: 64
