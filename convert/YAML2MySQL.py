@@ -5,7 +5,7 @@ Convert yml to sql. Support Mysql5.6+
 """
 import yaml
 
-table_list = ['房屋表', '居民表', '机动车', '计划表']
+table_list = ['工作表', '居民表', '机动车', '计划表']
 template_table = '''
 CREATE TABLE `{table_name}` (
 {field_list_str}
@@ -40,7 +40,7 @@ def parse(table_name):
         field_size = '(' + str(field_attr['size']) + field_scale + ')' \
             if field_attr['type'] not in ['text', 'timestamp'] and 'size' in field_attr else ''
 
-        field_notnull = 'NOT NULL' if field_attr['type'] not in ['text', 'timestamp'] else 'NULL'
+        field_notnull = 'NOT NULL' if field_attr['type'] not in ['text', 'timestamp'] else ''
 
         field_default = 'DEFAULT '
         if field_attr['type'] == 'string' and field_name != 'id':
@@ -56,6 +56,8 @@ def parse(table_name):
             field_default += 'NULL ON UPDATE CURRENT_TIMESTAMP'
         elif field_name == 'id':
             field_default = 'PRIMARY KEY'
+        else:
+            field_default = ''
 
         field_comment = 'COMMENT \'' + field_attr['comment'] + '\'' if 'comment' in field_attr else ''
 
