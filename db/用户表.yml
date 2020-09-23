@@ -20,6 +20,10 @@ field:
         type: string
         size: 1024
         comment: 头像
+    balance:
+        type: integer
+        size: 8
+        comment: 余额
     status:
         type: integer
         size: 1

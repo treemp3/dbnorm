@@ -11,10 +11,6 @@ field:
     job_desc:
         type: text
         comment: 工作描述
-    job_num:
-        type: integer
-        size: 4
-        comment: 工作数量
     reward:
         type: integer
         size: 8
