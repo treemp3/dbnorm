@@ -59,10 +59,17 @@ field:
         type: string
         size: 32
         comment: 修改人姓名
-    update_remark:
-        type: string
-        size: 128
-        comment: 修改人备注
     update_time:
         type: timestamp
         comment: 修改时间
+    interview_time:
+        type: timestamp
+        comment: 面试时间
+    interview_addr:
+        type: string
+        size: 128
+        comment: 面试地点
+    interview_remark:
+        type: string
+        size: 128
+        comment: 面试评价
