@@ -1,0 +1,44 @@
+table: withdraw
+comment: 提现表
+field:
+    id:
+        type: string
+        size: 64
+    balance:
+        type: integer
+        size: 8
+        comment: 账户余额
+    amount:
+        type: integer
+        size: 8
+        comment: 提现金额
+    status:
+        type: integer
+        size: 1
+        comment: 状态（0未处理 1已处理）
+    del_flag:
+        type: integer
+        size: 1
+        comment: 删除标记（0正常 1删除）
+    create_by:
+        type: string
+        size: 64
+        comment: 创建人
+    create_name:
+        type: string
+        size: 32
+        comment: 创建人姓名
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_by:
+        type: string
+        size: 64
+        comment: 修改人
+    update_name:
+        type: string
+        size: 32
+        comment: 修改人姓名
+    update_time:
+        type: timestamp
+        comment: 修改时间
