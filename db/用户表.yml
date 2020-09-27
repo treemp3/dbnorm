@@ -16,7 +16,7 @@ field:
         type: string
         size: 32
         comment: 姓名
-    icon:
+    avatar:
         type: string
         size: 1024
         comment: 头像
@@ -24,6 +24,38 @@ field:
         type: integer
         size: 8
         comment: 余额
+    gender:
+        type: integer
+        size: 1
+        comment: 性别
+    country:
+        type: string
+        size: 32
+        comment: 国家
+    province:
+        type: string
+        size: 32
+        comment: 省份
+    city:
+        type: string
+        size: 32
+        comment: 城市
+    county:
+        type: string
+        size: 32
+        comment: 区县
+    address:
+        type: string
+        size: 128
+        comment: 地址
+    wx_open_id:
+        type: string
+        size: 32
+        comment: 微信OpenID
+    wx_union_id:
+        type: string
+        size: 32
+        comment: 微信UnionID
     status:
         type: integer
         size: 1
@@ -32,9 +64,13 @@ field:
         type: integer
         size: 1
         comment: 删除标记（0正常 1删除）
+    create_by:
+        type: string
+        size: 64
     create_time:
         type: timestamp
-        comment: 创建时间
+    update_by:
+        type: string
+        size: 64
     update_time:
         type: timestamp
-        comment: 修改时间
