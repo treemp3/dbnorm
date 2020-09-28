@@ -27,7 +27,7 @@ field:
     gender:
         type: integer
         size: 1
-        comment: 性别
+        comment: 性别（0未知 1男 2女）
     country:
         type: string
         size: 32

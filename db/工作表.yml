@@ -4,11 +4,11 @@ field:
     id:
         type: string
         size: 64
-    job_title:
+    title:
         type: string
         size: 256
         comment: 工作标题
-    job_desc:
+    detail:
         type: text
         comment: 工作描述
     reward:
@@ -21,7 +21,7 @@ field:
     status:
         type: integer
         size: 1
-        comment: 状态（0正常 1撤回）
+        comment: 状态（0未发布 1已发布）
     del_flag:
         type: integer
         size: 1
@@ -45,6 +45,10 @@ field:
         type: string
         size: 64
         comment: 修改人
+    update_name:
+        type: string
+        size: 32
+        comment: 修改人昵称
     update_time:
         type: timestamp
         comment: 修改时间

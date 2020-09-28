@@ -1,0 +1,46 @@
+table: log
+comment: 日志记录表
+field:
+    id:
+        type: string
+        size: 64
+    category:
+        type: string
+        size: 32
+        comment: 类别
+    operate:
+        type: string
+        size: 32
+        comment: 操作
+    target:
+        type: string
+        size: 64
+        comment: 目标
+    amount:
+        type: integer
+        size: 8
+        comment: 数量
+    status:
+        type: integer
+        size: 1
+        comment: 状态（0正常 1禁用）
+    del_flag:
+        type: integer
+        size: 1
+        comment: 删除标记（0正常 1删除）
+    create_by:
+        type: string
+        size: 64
+    create_name:
+        type: string
+        size: 32
+    create_time:
+        type: timestamp
+    update_by:
+        type: string
+        size: 64
+    update_name:
+        type: string
+        size: 32
+    update_time:
+        type: timestamp
