@@ -1,4 +1,4 @@
-table: complaint
+table: report
 comment: 举报投诉表
 field:
     id:
@@ -20,10 +20,18 @@ field:
         type: string
         size: 256
         comment: 职位名称
-    dispose_remark:
+    vote_id:
+        type: string
+        size: 64
+        comment: 推荐ID
+    remark:
         type: string
         size: 128
         comment: 举报内容
+    feedback:
+        type: string
+        size: 256
+        comment: 反馈结果
     status:
         type: integer
         size: 1
@@ -35,22 +43,16 @@ field:
     create_by:
         type: string
         size: 64
-        comment: 创建人
     create_name:
         type: string
         size: 32
-        comment: 创建人姓名
     create_time:
         type: timestamp
-        comment: 创建时间
     update_by:
         type: string
         size: 64
-        comment: 修改人
     update_name:
         type: string
         size: 32
-        comment: 修改人姓名
     update_time:
         type: timestamp
-        comment: 修改时间

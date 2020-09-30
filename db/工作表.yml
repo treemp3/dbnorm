@@ -21,7 +21,7 @@ field:
     status:
         type: integer
         size: 1
-        comment: 状态（0未发布 1已发布）
+        comment: 状态（0未发布 1已发布 2已接单 3已完成）
     del_flag:
         type: integer
         size: 1
