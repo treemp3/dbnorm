@@ -1,25 +1,24 @@
-table: withdraw
-comment: 提现表
+table: test
+comment: 测试表
 field:
     id:
         type: string
         size: 64
-    balance:
+    ii:
         type: integer
         size: 8
-        comment: 账户余额
-    amount:
-        type: integer
-        size: 8
-        comment: 提现金额
+        comment: int
+    ff:
+        type: decimal
+        size: 5
+        scale: 2
+        comment: float
     status:
         type: integer
         size: 1
-        comment: 状态（0未处理 1已处理）
     del_flag:
         type: integer
         size: 1
-        comment: 删除标记（0正常 1删除）
     create_by:
         type: string
         size: 64
