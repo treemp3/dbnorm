@@ -1,21 +1,25 @@
-table: iot_camera
-comment: 摄像头表
+table: iot_project
+comment: 项目管理
 field:
     id:
         type: integer
         size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属项目
     name:
         type: string
         size: 32
-        comment: 摄像头名称
-    iot_equipment_id:
+        comment: 项目名称
+    sort:
         type: integer
-        size: 11
-        comment: 设备ID
-    video_uri:
+        size: 4
+        comment: 排序
+    remarks:
         type: string
-        size: 1024
-        comment: 视频流地址
+        size: 128
+        comment: 备注
     create_time:
         type: timestamp
         comment: 创建时间
