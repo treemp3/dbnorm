@@ -1,0 +1,28 @@
+table: grouping
+comment: 分组表
+field:
+    id:
+        type: integer
+        size: 11
+    parent_id:
+        type: integer
+        size: 11
+        comment: 上级编码
+    name:
+        type: string
+        size: 32
+        comment: 分组名称
+    sort:
+        type: integer
+        size: 4
+        comment: 分组排序
+    remark:
+        type: string
+        size: 128
+        comment: 分组描述
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

@@ -1,0 +1,71 @@
+table: equipment
+comment: 装备表
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 32
+        comment: 设备编码
+    name:
+        type: string
+        size: 32
+        comment: 设备名称
+    model:
+        type: string
+        size: 32
+        comment: 设备型号
+    grouping:
+        type: integer
+        size: 11
+        comment: 项目分组
+    gateway_code:
+        type: string
+        size: 64
+        comment: 网关编码
+    picture:
+        type: string
+        size: 1024
+        comment: 设备图片
+    place:
+        type: string
+        size: 128
+        comment: 安装地点
+    longitude:
+        type: decimal
+        size: 9
+        scale: 6
+        comment: 经度
+    latitude:
+        type: decimal
+        size: 9
+        scale: 6
+        comment: 纬度
+    leave_date:
+        type: timestamp
+        comment: 出厂日期
+    install_date:
+        type: timestamp
+        comment: 安装日期
+    industry_name:
+        type: string
+        size: 32
+        comment: 所属行业
+    company_name:
+        type: string
+        size: 32
+        comment: 所属公司
+    department_name:
+        type: string
+        size: 32
+        comment: 所属部门
+    remark:
+        type: text
+        comment: 备注
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

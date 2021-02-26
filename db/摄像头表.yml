@@ -1,0 +1,24 @@
+table: camera
+comment: 摄像头表
+field:
+    id:
+        type: integer
+        size: 11
+    name:
+        type: string
+        size: 32
+        comment: 摄像头名称
+    equipment_id:
+        type: integer
+        size: 11
+        comment: 设备ID
+    video_uri:
+        type: string
+        size: 1024
+        comment: 视频流地址
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

@@ -5,7 +5,7 @@ Convert yml to sql. Support Mysql5.6+
 """
 import yaml
 
-table_list = ['工作表', '用户表', '日志表', '推荐表', '投诉表', '测试表', '提现表']
+table_list = ['装备表', '分组表', '摄像头表', '推荐表', '投诉表', '测试表', '提现表']
 template_table = '''
 CREATE TABLE `{table_name}` (
 {field_list_str}
@@ -40,10 +40,12 @@ def parse(table_name):
         field_size = '(' + str(field_attr['size']) + field_scale + ')' \
             if field_attr['type'] not in ['text', 'timestamp'] and 'size' in field_attr else ''
 
-        field_notnull = 'NOT NULL' if field_attr['type'] not in ['text', 'timestamp'] else ''
+        field_notnull = 'NOT NULL' if field_attr['type'] not in ['text', 'timestamp'] else 'NULL'
 
         field_default = 'DEFAULT '
-        if field_attr['type'] == 'string' and field_name != 'id':
+        if field_name == 'id':
+            field_default = 'AUTO_INCREMENT PRIMARY KEY'
+        elif field_attr['type'] == 'string' and field_name != 'id':
             # 非主键的字符串字段的默认值为''
             field_default += '\'\''
         elif field_attr['type'] in ('integer', 'decimal'):
@@ -54,8 +56,6 @@ def parse(table_name):
         elif field_name == 'update_time':
             # mysql同一个表中不能有两个字段默认值是当前时间
             field_default += 'NULL ON UPDATE CURRENT_TIMESTAMP'
-        elif field_name == 'id':
-            field_default = 'PRIMARY KEY'
         else:
             field_default = ''
 
