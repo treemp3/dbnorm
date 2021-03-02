@@ -12,6 +12,10 @@ field:
         type: string
         size: 32
         comment: 设备名称
+    type:
+        type: integer
+        size: 1
+        comment: 设备类型：0-生产设备，1-售出设备，2-办公设备
     model:
         type: string
         size: 32
@@ -60,6 +64,10 @@ field:
         type: string
         size: 32
         comment: 部门名称
+    order_code:
+        type: string
+        size: 32
+        comment: 订单编码
     remarks:
         type: text
         comment: 备注

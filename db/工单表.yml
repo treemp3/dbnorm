@@ -1,0 +1,68 @@
+table: iot_maintain_ticket
+comment: 维保工单
+field:
+    id:
+        type: integer
+        size: 11
+    title:
+        type: string
+        size: 32
+        comment: 工单标题
+    iot_equipment_id:
+        type: integer
+        size: 11
+        comment: 所属设备
+    status:
+        type: integer
+        size: 1
+        comment: 状态：0-待处理，1-已派单，2-已接单，3-已结单
+    type:
+        type: integer
+        size: 1
+        comment: 类型：0-故障维保，1-常规维保
+    remarks:
+        type: string
+        size: 256
+        comment: 备注
+    picture:
+        type: string
+        size: 1024
+        comment: 图片
+    report_by:
+        type: string
+        size: 32
+        comment: 报修人
+    phone:
+        type: string
+        size: 16
+        comment: 联系电话
+    spare_part:
+        type: string
+        size: 64
+        comment: 备品备件
+    deal_by:
+        type: integer
+        size: 11
+        comment: 处理人
+    deal_type:
+        type: integer
+        size: 1
+        comment: 处理方式：0-非现场处理，1-现场处理
+    deal_process:
+        type: string
+        size: 256
+        comment: 处理过程
+    deal_result:
+        type: string
+        size: 64
+        comment: 处理结果
+    deal_comment:
+        type: string
+        size: 128
+        comment: 评价描述
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

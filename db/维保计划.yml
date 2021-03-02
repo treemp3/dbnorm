@@ -1,0 +1,45 @@
+table: iot_maintain_plan
+comment: 维保计划
+field:
+    id:
+        type: integer
+        size: 11
+    title:
+        type: string
+        size: 32
+        comment: 计划标题
+    iot_equipment_id:
+        type: integer
+        size: 11
+        comment: 所属设备
+    interval:
+        type: integer
+        size: 4
+        comment: 维保周期（天）
+    start_date:
+        type: timestamp
+        comment: 维保开始日期
+    end_date:
+        type: timestamp
+        comment: 维保结束日期
+    next_date:
+        type: timestamp
+        comment: 下次维保日期
+    before_day:
+        type: integer
+        size: 4
+        comment: 提前派单天数
+    is_expire_stop:
+        type: integer
+        size: 1
+        comment: 是否到期停止执行
+    remarks:
+        type: string
+        size: 256
+        comment: 备注
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间
