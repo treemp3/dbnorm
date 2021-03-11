@@ -24,6 +24,10 @@ field:
         type: integer
         size: 11
         comment: 所属项目
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
     gateway_code:
         type: string
         size: 64

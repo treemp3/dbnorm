@@ -40,6 +40,10 @@ field:
         type: string
         size: 64
         comment: 备品备件
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
     deal_by:
         type: integer
         size: 11

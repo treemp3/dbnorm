@@ -33,6 +33,10 @@ field:
         type: integer
         size: 1
         comment: 是否到期停止执行
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
     remarks:
         type: string
         size: 256

@@ -5,7 +5,7 @@ Convert yml to sql. Support Mysql5.6+
 """
 import yaml
 
-table_list = ['装备表', '项目表', '摄像头表', '维保计划', '工单表', '测试表', '提现表']
+table_list = ['装备表', '项目表', '摄像头表', '维保计划', '工单表', '工厂表', '提现表']
 template_table = '''
 CREATE TABLE `{table_name}` (
 {field_list_str}

@@ -11,7 +11,7 @@ field:
     iot_equipment_id:
         type: integer
         size: 11
-        comment: 设备ID
+        comment: 所属设备
     video_uri:
         type: string
         size: 1024
