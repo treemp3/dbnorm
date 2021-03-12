@@ -1,0 +1,21 @@
+table: m_route_procedure
+comment: 标准工序
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 工序编码
+    name:
+        type: string
+        size: 64
+        comment: 工序名称
+    section_code:
+        type: string
+        size: 64
+        comment: 所属车间
+    remarks:
+        type: text
+        comment: 备注

@@ -1,0 +1,38 @@
+table: m_route_detail
+comment: 工艺路线明细
+field:
+    id:
+        type: integer
+        size: 11
+    route_code:
+        type: string
+        size: 64
+        comment: 工艺路线编码
+    procedure_code:
+        type: string
+        size: 64
+        comment: 工序编码
+    pre_procedure:
+        type: string
+        size: 256
+        comment: 前置工序
+    continue_mode:
+        type: integer
+        size: 1
+        comment: 接续方式:0=无前置条件,1=前序结束开始,2=收到前序物料开始
+    prepare_time:
+        type: integer
+        size: 4
+        comment: 准备时间
+    time_unit:
+        type: integer
+        size: 1
+        comment: 时间单位:1=分钟,2=小时,3=天,4=月,5=年
+    output_inventory:
+        type: string
+        size: 256
+        comment: 产出物料
+    defective_item:
+        type: string
+        size: 256
+        comment: 次品项

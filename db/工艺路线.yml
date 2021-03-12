@@ -1,0 +1,39 @@
+table: m_route
+comment: 工艺路线
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    name:
+        type: string
+        size: 64
+        comment: 名称
+    version:
+        type: integer
+        size: 4
+        comment: 版本
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建者
+    create_time:
+        type: datetime
+        comment: 创建时间
+    update_by:
+        type: integer
+        size: 11
+        comment: 更新者
+    update_time:
+        type: datetime
+        comment: 更新时间
+    status:
+        type: integer
+        size: 1
+        comment: 状态:0=未启用,1=启用

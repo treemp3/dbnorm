@@ -1,0 +1,36 @@
+table: iot_trace_step
+comment: 追溯环节
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属环节
+    title:
+        type: string
+        size: 32
+        comment: 环节标题
+    record_by:
+        type: string
+        size: 256
+        comment: 指定记录人
+    is_open:
+        type: integer
+        size: 1
+        comment: 是否公开
+    sort:
+        type: integer
+        size: 4
+        comment: 排序
+    remarks:
+        type: string
+        size: 256
+        comment: 备注
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

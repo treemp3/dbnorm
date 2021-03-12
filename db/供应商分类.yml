@@ -1,0 +1,22 @@
+table: m_vendor_type
+comment: 供应商分类
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属分类
+    name:
+        type: string
+        size: 32
+        comment: 类别名称
+    level:
+        type: integer
+        size: 1
+        comment: 编码级次
+    is_last:
+        type: integer
+        size: 1
+        comment: 是否末级

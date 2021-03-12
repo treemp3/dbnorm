@@ -1,0 +1,27 @@
+table: iot_trace_record
+comment: 追溯环节记录
+field:
+    id:
+        type: integer
+        size: 11
+    iot_equipment_id:
+        type: integer
+        size: 11
+        comment: 所属设备
+    iot_trace_step_id:
+        type: integer
+        size: 11
+        comment: 所属追溯环节
+    content:
+        type: text
+        comment: 记录内容
+    record_by:
+        type: integer
+        size: 11
+        comment: 记录人
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

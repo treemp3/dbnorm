@@ -1,0 +1,26 @@
+table: m_factory
+comment: 工厂表
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 32
+        comment: 工厂编号
+    name:
+        type: string
+        size: 64
+        comment: 工厂名称
+    type:
+        type: integer
+        size: 1
+        comment: 制造类型:0=离散型制造,1=流程型制造,2=混合型制造
+    produce_mode:
+        type: integer
+        size: 1
+        comment: 生产方式:0=订单式生产,1=备货式生产,2=混合式生产
+    remarks:
+        type: string
+        size: 256
+        comment: 备注

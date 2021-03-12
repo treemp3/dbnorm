@@ -5,7 +5,7 @@ Convert yml to sql. Support Mysql5.6+
 """
 import yaml
 
-table_list = ['装备表', '项目表', '摄像头表', '维保计划', '工单表', '工厂表', '提现表']
+table_list = ['装备表', '项目表', '摄像头表', '维保计划', '工单表', '工厂表', '供应商分类', '供应商档案', '标准工序', '工艺路线', '工艺路线明细', '工艺路线关联表']
 template_table = '''
 CREATE TABLE `{table_name}` (
 {field_list_str}
@@ -17,7 +17,10 @@ field_type_dict = {
     'decimal': 'float',
     'string': 'varchar',
     'text': 'text',
-    'timestamp': 'timestamp'
+    'timestamp': 'timestamp',
+    'datetime': 'datetime',
+    'date': 'date',
+    'time': 'time'
 }
 
 
@@ -38,9 +41,11 @@ def parse(table_name):
         field_scale = ',' + str(field_attr['scale']) \
             if field_attr['type'] == 'decimal' and 'scale' in field_attr else ''
         field_size = '(' + str(field_attr['size']) + field_scale + ')' \
-            if field_attr['type'] not in ['text', 'timestamp'] and 'size' in field_attr else ''
+            if field_attr['type'] not in ['text', 'timestamp', 'datetime', 'date', 'time'] and 'size' in field_attr \
+            else ''
 
-        field_notnull = 'NOT NULL' if field_attr['type'] not in ['text', 'timestamp'] else 'NULL'
+        field_notnull = 'NOT NULL' \
+            if field_attr['type'] not in ['text', 'timestamp', 'datetime', 'date', 'time'] else 'NULL'
 
         field_default = 'DEFAULT '
         if field_name == 'id':

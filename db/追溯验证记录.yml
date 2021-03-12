@@ -1,0 +1,13 @@
+table: iot_trace_verify
+comment: 追溯验证记录
+field:
+    id:
+        type: integer
+        size: 11
+    iot_equipment_id:
+        type: integer
+        size: 11
+        comment: 所属设备
+    create_time:
+        type: timestamp
+        comment: 创建时间
