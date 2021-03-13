@@ -1,0 +1,71 @@
+table: m_device
+comment: 设备档案
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 设备编码
+    name:
+        type: string
+        size: 64
+        comment: 设备名称
+    type:
+        type: integer
+        size: 1
+        comment: 类型:1=数控,2=普通,3=半自动,4=自动,5=数显,6=无
+    vendor_id:
+        type: integer
+        size: 11
+        comment: 制造单位
+    model:
+        type: string
+        size: 64
+        comment: 规格型号
+    org_id:
+        type: integer
+        size: 11
+        comment: 使用部门
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    status:
+        type: integer
+        size: 1
+        comment: 设备状态:1=正常,2=损坏,3=异常,4=维修,5=闲置,6=报废
+    maintain_by:
+        type: integer
+        size: 11
+        comment: 维护人
+    depositary:
+        type: string
+        size: 1024
+        comment: 存放地点
+    section_id:
+        type: integer
+        size: 11
+        comment: 所属工段
+    price:
+        type: integer
+        size: 11
+        comment: 设备单价
+    buy_date:
+        type: date
+        comment: 购买日期
+    use_date:
+        type: date
+        comment: 使用日期
+    category_type:
+        type: string
+        size: 64
+        comment: 设备类别
+    out_code:
+        type: string
+        size: 128
+        comment: 出厂编号
+    remarks:
+        type: text
+        comment: 备注

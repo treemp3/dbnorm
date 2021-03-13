@@ -1,0 +1,25 @@
+table: m_logistics
+comment: 物流档案
+field:
+    id:
+        type: integer
+        size: 11
+    name:
+        type: string
+        size: 64
+        comment: 物流名称
+    logistics_by:
+        type: string
+        size: 64
+        comment: 承运人
+    logistics_phone:
+        type: string
+        size: 64
+        comment: 承运人电话
+    address:
+        type: string
+        size: 1024
+        comment: 公司地址
+    remarks:
+        type: text
+        comment: 备注

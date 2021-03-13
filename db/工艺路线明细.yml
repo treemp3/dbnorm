@@ -1,4 +1,4 @@
-table: m_route_detail
+table: m_routes
 comment: 工艺路线明细
 field:
     id:
@@ -20,6 +20,10 @@ field:
         type: integer
         size: 1
         comment: 接续方式:0=无前置条件,1=前序结束开始,2=收到前序物料开始
+    section_id:
+        type: integer
+        size: 11
+        comment: 所属工位
     prepare_time:
         type: integer
         size: 4

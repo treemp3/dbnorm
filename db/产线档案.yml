@@ -1,0 +1,81 @@
+table: m_production_line
+comment: 产线档案
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 产线编码
+    name:
+        type: string
+        size: 64
+        comment: 产线名称
+    factory_id:
+        type: integer
+        size: 11
+        comment: 所属工厂
+    production_name:
+        type: string
+        size: 128
+        comment: 产品线
+    nature:
+        type: integer
+        size: 1
+        comment: 性质:0=厂内,1=外协
+    org_id:
+        type: integer
+        size: 11
+        comment: 部门
+    produce_by:
+        type: integer
+        size: 11
+        comment: 生产负责人
+    technology_by:
+        type: integer
+        size: 11
+        comment: 技术负责人
+    dispatch_by:
+        type: integer
+        size: 11
+        comment: 调度员
+    quality_by:
+        type: integer
+        size: 11
+        comment: 质检员
+    purchase_by:
+        type: integer
+        size: 11
+        comment: 采购员
+    route_id:
+        type: integer
+        size: 11
+        comment: 默认工艺路线
+    workshop_id:
+        type: string
+        size: 256
+        comment: 关联车间
+    section_id:
+        type: string
+        size: 1024
+        comment: 关联工位
+    team_id:
+        type: string
+        size: 512
+        comment: 关联班组
+    procedure_id:
+        type: string
+        size: 1024
+        comment: 关联工序
+    user_id:
+        type: string
+        size: 1024
+        comment: 关联人员
+    is_enable:
+        type: integer
+        size: 1
+        comment: 是否启用:0=否,1=是
+    remarks:
+        type: text
+        comment: 备注
