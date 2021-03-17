@@ -1,0 +1,38 @@
+table: m_section
+comment: 车间工段工位机台
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 上级ID
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    name:
+        type: string
+        size: 64
+        comment: 名称
+    level:
+        type: integer
+        size: 1
+        comment: 级别:1=车间,2=工段,3=工位,4=机台
+    sort:
+        type: integer
+        size: 4
+        comment: 排序
+    factory_id:
+        type: integer
+        size: 11
+        comment: 所属工厂
+    team_id:
+        type: string
+        size: 512
+        comment: 关联班组
+    user_id:
+        type: string
+        size: 1024
+        comment: 关联人员

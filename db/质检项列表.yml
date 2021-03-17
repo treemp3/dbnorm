@@ -1,0 +1,33 @@
+table: m_quality_schemes
+comment: 质检项列表
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    item_code:
+        type: string
+        size: 64
+        comment: 名称
+    scheme_id:
+        type: integer
+        size: 11
+        comment: 质检方案
+    standard:
+        type: string
+        size: 1024
+        comment: 质检标准
+    upper_limit:
+        type: integer
+        size: 11
+        comment: 上限
+    lower_limit:
+        type: integer
+        size: 11
+        comment: 下限
+    remarks:
+        type: text
+        comment: 备注

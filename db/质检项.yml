@@ -1,0 +1,25 @@
+table: m_quality_item
+comment: 质检项
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    name:
+        type: string
+        size: 64
+        comment: 名称
+    type:
+        type: integer
+        size: 1
+        comment: 类别:1=外观指标,2=化学指标
+    method:
+        type: string
+        size: 1024
+        comment: 质检方法
+    remarks:
+        type: text
+        comment: 备注

@@ -1,0 +1,29 @@
+table: m_quality_scheme
+comment: 质检方案
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    name:
+        type: string
+        size: 64
+        comment: 名称
+    version:
+        type: integer
+        size: 4
+        comment: 版本号
+    type:
+        type: integer
+        size: 1
+        comment: 检验类别:1=过程检验,2=入库检验,3=来料检验,4=无需检验
+    check_type:
+        type: integer
+        size: 1
+        comment: 质检方式:0=抽样检查,1=全检
+    remarks:
+        type: text
+        comment: 备注
