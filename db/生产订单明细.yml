@@ -1,0 +1,103 @@
+table: mes_orders
+comment: 生产订单明细
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单编码
+    product:
+        type: string
+        size: 64
+        comment: 产品序号
+    section_code:
+        type: string
+        size: 64
+        comment: 加工部门
+    inventory_code:
+        type: string
+        size: 64
+        comment: 存货编码
+    type:
+        type: string
+        size: 64
+        comment: 型号规格
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    is_entered:
+        type: integer
+        size: 1
+        comment: 生产计划是否录入
+    need_date:
+        type: date
+        comment: 需求日期
+    design_date:
+        type: date
+        comment: 技术设计日期
+    purchase_date:
+        type: date
+        comment: 采购日期
+    coordination_date:
+        type: date
+        comment: 外协日期
+    produce_date:
+        type: date
+        comment: 生产日期
+    machining_date:
+        type: date
+        comment: 机加日期
+    choice_design:
+        type: string
+        size: 1024
+        comment: 选择设计任务
+    sort:
+        type: integer
+        size: 4
+        comment: 排序
+    status:
+        type: integer
+        size: 1
+        comment: 请购单状态:0=未生成,1=已生成
+    guid:
+        type: string
+        size: 128
+        comment: GUID
+    contracts_guid:
+        type: string
+        size: 128
+        comment: 合同子表GUID
+    file:
+        type: string
+        size: 1024
+        comment: 上传附件
+    is_drawing:
+        type: integer
+        size: 1
+        comment: 图纸
+    is_agreement:
+        type: integer
+        size: 1
+        comment: 技术协议
+    is_customer_inventory:
+        type: integer
+        size: 1
+        comment: 客供件
+    is_ship_inspection:
+        type: integer
+        size: 1
+        comment: 船检要求
+    custom_ask:
+        type: string
+        size: 1024
+        comment: 客户特殊要求
+    remarks:
+        type: text
+        comment: 备注

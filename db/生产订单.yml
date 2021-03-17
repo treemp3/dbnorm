@@ -1,0 +1,89 @@
+table: mes_order
+comment: 生产订单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    status:
+        type: integer
+        size: 1
+        comment: 订单状态:0=未审核,1=已审核
+    contract_code:
+        type: string
+        size: 64
+        comment: 合同号
+    type:
+        type: integer
+        size: 1
+        comment: 性质:0=订单,1=备货
+    need_date:
+        type: date
+        comment: 需求日期
+    order_date:
+        type: date
+        comment: 下单日期
+    arrival_date:
+        type: date
+        comment: 到货日期
+    design_date:
+        type: date
+        comment: 技术设计日期
+    purchase_date:
+        type: date
+        comment: 采购日期
+    coordination_date:
+        type: date
+        comment: 外协日期
+    produce_date:
+        type: date
+        comment: 生产日期
+    machining_date:
+        type: date
+        comment: 机加日期
+    customer_level:
+        type: integer
+        size: 1
+        comment: 客户等级:0=A级,1=B级,2=C级
+    urgency:
+        type: integer
+        size: 1
+        comment: 紧急程度:0=一般,1=紧急,2=特急
+    presale_number:
+        type: string
+        size: 64
+        comment: 售前单号
+    presale_person:
+        type: integer
+        size: 11
+        comment: 售前技术
+    dispatch_by:
+        type: integer
+        size: 11
+        comment: 下单人
+    approval_by:
+        type: integer
+        size: 11
+        comment: 批准人
+    sale_person:
+        type: integer
+        size: 11
+        comment: 网络销售
+    is_copy:
+        type: integer
+        size: 1
+        comment: 是否同步子表时间
+    file:
+        type: string
+        size: 1024
+        comment: 上传附件
+    data_preparation:
+        type: string
+        size: 1024
+        comment: 资料准备
+    remarks:
+        type: text
+        comment: 备注
