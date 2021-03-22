@@ -14,12 +14,12 @@ field:
         comment: 所属设备
     status:
         type: integer
-        size: 1
-        comment: 状态：0-待处理，1-已派单，2-已接单，3-已结单
+        size: 4
+        comment: 状态:0=待处理,1=已派单,2=已接单,3=已结单
     type:
         type: integer
-        size: 1
-        comment: 类型：0-故障维保，1-常规维保
+        size: 4
+        comment: 类型:0=故障维保,1=常规维保
     remarks:
         type: string
         size: 256
@@ -50,8 +50,8 @@ field:
         comment: 处理人
     deal_type:
         type: integer
-        size: 1
-        comment: 处理方式：0-非现场处理，1-现场处理
+        size: 4
+        comment: 处理方式:0=非现场处理,1=现场处理
     deal_process:
         type: string
         size: 256

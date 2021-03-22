@@ -7,7 +7,7 @@ import yaml
 
 table_list = ['装备表', '项目表', '摄像头表', '维保计划', '工单表', '工厂表', '供应商分类', '供应商档案',
               '标准工序', '工艺路线', '工艺路线明细', '物流档案', '产线档案', '设备档案', '车间工段工位',
-              '质检项', '质检方案', '质检项列表']
+              '质检项', '质检方案', '质检项列表', '生产订单', '生产订单明细', '销售客户', '销售线索', '销售跟进']
 template_table = '''
 CREATE TABLE `{table_name}` (
 {field_list_str}
@@ -16,7 +16,7 @@ CREATE TABLE `{table_name}` (
 template_field = '`{field_name}` {field_type}{field_size} {field_notnull} {field_default} {field_comment},\n'
 field_type_dict = {
     'integer': 'int',
-    'decimal': 'float',
+    'decimal': 'decimal',
     'string': 'varchar',
     'text': 'text',
     'timestamp': 'timestamp',

@@ -1,0 +1,94 @@
+table: crm_sale
+comment: 销售客户
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    name:
+        type: string
+        size: 64
+        comment: 客户名称
+    type:
+        type: integer
+        size: 1
+        comment: 客户分类:0=不重要,1=一般,2=重要
+    contact_person:
+        type: string
+        size: 64
+        comment: 客户联系人
+    amount:
+        type: integer
+        size: 11
+        comment: 预计金额
+    contact_time:
+        type: datetime
+        comment: 最后联系时间
+    expect_date:
+        type: date
+        comment: 预计签单日期
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属部门
+    province:
+        type: string
+        size: 16
+        comment: 省份
+    city:
+        type: string
+        size: 16
+        comment: 地市
+    county:
+        type: string
+        size: 16
+        comment: 区县
+    phone:
+        type: string
+        size: 64
+        comment: 联系电话
+    address:
+        type: string
+        size: 1024
+        comment: 地址
+    e_mail:
+        type: string
+        size: 64
+        comment: 邮箱
+    qq:
+        type: integer
+        size: 11
+        comment: QQ
+    we_chat:
+        type: string
+        size: 128
+        comment: 微信
+    sale_person:
+        type: integer
+        size: 11
+        comment: 业务员
+    inventory:
+        type: string
+        size: 1024
+        comment: 相关产品
+    reason:
+        type: string
+        size: 1024
+        comment: 转移原因
+    is_sea:
+        type: integer
+        size: 1
+        comment: 是否公海客户
+    remarks:
+        type: text
+        comment: 备注

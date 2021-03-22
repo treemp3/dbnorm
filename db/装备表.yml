@@ -14,8 +14,8 @@ field:
         comment: 设备名称
     type:
         type: integer
-        size: 1
-        comment: 设备类型：0-生产设备，1-售出设备，2-办公设备
+        size: 4
+        comment: 设备类型:0=生产设备,1=售出设备,2=办公设备
     model:
         type: string
         size: 32
@@ -72,6 +72,10 @@ field:
         type: string
         size: 32
         comment: 订单编码
+    spare_part:
+        type: string
+        size: 1024
+        comment: 备品配件
     remarks:
         type: text
         comment: 备注

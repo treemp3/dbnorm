@@ -1,0 +1,48 @@
+table: crm_clue
+comment: 销售线索
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    name:
+        type: string
+        size: 64
+        comment: 线索名称
+    sale_code:
+        type: string
+        size: 64
+        comment: 所属客户
+    contact_person:
+        type: string
+        size: 64
+        comment: 线索联系人
+    phone:
+        type: string
+        size: 64
+        comment: 联系电话
+    amount:
+        type: integer
+        size: 11
+        comment: 预计金额
+    sale_person:
+        type: integer
+        size: 11
+        comment: 业务员
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    status:
+        type: integer
+        size: 1
+        comment: 线索状态:0=未开始,1=进行中,2=已结束
+    remarks:
+        type: text
+        comment: 备注
