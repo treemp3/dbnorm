@@ -14,7 +14,7 @@ field:
         comment: 设备名称
     type:
         type: integer
-        size: 1
+        size: 4
         comment: 类型:1=数控,2=普通,3=半自动,4=自动,5=数显,6=无
     vendor_id:
         type: integer
@@ -34,7 +34,7 @@ field:
         comment: 数量
     status:
         type: integer
-        size: 1
+        size: 4
         comment: 设备状态:1=正常,2=损坏,3=异常,4=维修,5=闲置,6=报废
     maintain_by:
         type: integer

@@ -14,7 +14,7 @@ field:
         comment: 类别名称
     level:
         type: integer
-        size: 1
+        size: 4
         comment: 编码级次
     is_last:
         type: integer

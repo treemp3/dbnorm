@@ -41,7 +41,7 @@ field:
         comment: 创建时间
     status:
         type: integer
-        size: 1
+        size: 4
         comment: 线索状态:0=未开始,1=进行中,2=已结束
     remarks:
         type: text

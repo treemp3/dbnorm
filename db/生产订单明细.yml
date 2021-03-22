@@ -64,7 +64,7 @@ field:
         comment: 排序
     status:
         type: integer
-        size: 1
+        size: 4
         comment: 请购单状态:0=未生成,1=已生成
     guid:
         type: string

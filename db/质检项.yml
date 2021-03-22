@@ -14,7 +14,7 @@ field:
         comment: 名称
     type:
         type: integer
-        size: 1
+        size: 4
         comment: 类别:1=外观指标,2=化学指标
     method:
         type: string

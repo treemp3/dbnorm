@@ -35,5 +35,5 @@ field:
         comment: 更新时间
     status:
         type: integer
-        size: 1
+        size: 4
         comment: 状态:0=未启用,1=启用

@@ -10,7 +10,7 @@ field:
         comment: 编码
     status:
         type: integer
-        size: 1
+        size: 4
         comment: 订单状态:0=未审核,1=已审核
     contract_code:
         type: string
@@ -18,7 +18,7 @@ field:
         comment: 合同号
     type:
         type: integer
-        size: 1
+        size: 4
         comment: 性质:0=订单,1=备货
     need_date:
         type: date
@@ -46,11 +46,11 @@ field:
         comment: 机加日期
     customer_level:
         type: integer
-        size: 1
+        size: 4
         comment: 客户等级:0=A级,1=B级,2=C级
     urgency:
         type: integer
-        size: 1
+        size: 4
         comment: 紧急程度:0=一般,1=紧急,2=特急
     presale_number:
         type: string

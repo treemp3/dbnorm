@@ -14,7 +14,7 @@ field:
         comment: 客户名称
     type:
         type: integer
-        size: 1
+        size: 4
         comment: 客户分类:0=不重要,1=一般,2=重要
     contact_person:
         type: string

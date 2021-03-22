@@ -22,7 +22,7 @@ field:
         comment: 产品线
     nature:
         type: integer
-        size: 1
+        size: 4
         comment: 性质:0=厂内,1=外协
     org_id:
         type: integer

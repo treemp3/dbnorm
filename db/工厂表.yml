@@ -14,11 +14,11 @@ field:
         comment: 工厂名称
     type:
         type: integer
-        size: 1
+        size: 4
         comment: 制造类型:0=离散型制造,1=流程型制造,2=混合型制造
     produce_mode:
         type: integer
-        size: 1
+        size: 4
         comment: 生产方式:0=订单式生产,1=备货式生产,2=混合式生产
     remarks:
         type: string
