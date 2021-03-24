@@ -36,6 +36,10 @@ field:
         type: integer
         size: 11
         comment: 技术负责人
+    check_by:
+        type: integer
+        size: 11
+        comment: 订单审核人
     dispatch_by:
         type: integer
         size: 11

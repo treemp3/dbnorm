@@ -8,14 +8,18 @@ field:
         type: integer
         size: 11
         comment: 所属订单
+    check_status:
+        type: integer
+        size: 4
+        comment: 订单状态:0=未审核,1=已审核
     product:
         type: string
         size: 64
         comment: 产品序号
-    section_code:
+    production_line_code:
         type: string
         size: 64
-        comment: 加工部门
+        comment: 产线编码
     inventory_code:
         type: string
         size: 64

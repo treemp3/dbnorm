@@ -8,10 +8,6 @@ field:
         type: string
         size: 64
         comment: 编码
-    status:
-        type: integer
-        size: 4
-        comment: 订单状态:0=未审核,1=已审核
     contract_code:
         type: string
         size: 64
@@ -64,10 +60,10 @@ field:
         type: integer
         size: 11
         comment: 下单人
-    approval_by:
+    check_by:
         type: integer
         size: 11
-        comment: 批准人
+        comment: 订单审核人
     sale_person:
         type: integer
         size: 11
