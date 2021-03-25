@@ -1,0 +1,44 @@
+table: pdm_design
+comment: 设计图纸
+field:
+    id:
+        type: integer
+        size: 11
+    work_id:
+        type: integer
+        size: 11
+        comment: 设计任务
+    drawing:
+        type: string
+        size: 1024
+        comment: 图纸
+    cad:
+        type: string
+        size: 1024
+        comment: CAD
+    guide_file:
+        type: string
+        size: 1024
+        comment: 作业指导书
+    factory_file:
+        type: string
+        size: 1024
+        comment: 出厂资料
+    other_file:
+        type: string
+        size: 1024
+        comment: 其它文件
+    inventory_code:
+        type: string
+        size: 64
+        comment: 物件
+    finish_time:
+        type: datetime
+        comment: 完成时间
+    path:
+        type: string
+        size: 1024
+        comment: 图片路径
+    remarks:
+        type: text
+        comment: 备注

@@ -1,0 +1,39 @@
+table: pdm_factory_data
+comment: 出厂资料
+field:
+    id:
+        type: integer
+        size: 11
+    order_code:
+        type: string
+        size: 64
+        comment: 订单编码
+    name:
+        type: string
+        size: 64
+        comment: 资料名称
+    is_provide:
+        type: integer
+        size: 1
+        comment: 是否提供
+    check_by:
+        type: integer
+        size: 11
+        comment: 检验人
+    check_time:
+        type: datetime
+        comment: 检验时间
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    file:
+        type: string
+        size: 1024
+        comment: 附件
+    remarks:
+        type: text
+        comment: 备注

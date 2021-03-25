@@ -1,0 +1,33 @@
+table: mes_worker_hours
+comment: 员工报工时
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 作业计划
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单编码
+    procedure_code:
+        type: string
+        size: 64
+        comment: 工序
+    hours:
+        type: integer
+        size: 11
+        comment: 工时
+    total_hours:
+        type: integer
+        size: 11
+        comment: 总工时
+    operate_by:
+        type: integer
+        size: 11
+        comment: 作业人
+    remarks:
+        type: text
+        comment: 备注

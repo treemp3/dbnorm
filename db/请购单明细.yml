@@ -1,0 +1,103 @@
+table: mms_purchases
+comment: 请购单明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属请购单
+    status:
+        type: integer
+        size: 4
+        comment: 状态:0=未审核,1=已审核,0=未请购,1=已请购
+    bom_code:
+        type: string
+        size: 64
+        comment: BOM编码
+    check_status:
+        type: integer
+        size: 4
+        comment: 审核状态:0=未审核,1=已审核
+    assignment_status:
+        type: integer
+        size: 4
+        comment: 分派状态:0=未分派,1=已分派
+    unusual_status:
+        type: integer
+        size: 4
+        comment: 异常状态:0=正常,1=异常,2=异常已回复
+    dispose_status:
+        type: integer
+        size: 4
+        comment: 处理状态:0=未开始,1=已接收,2=已下单,3=已到货,4=部分到货,5=已审核,6=待处理
+    order_code:
+        type: string
+        size: 64
+        comment: 订单号
+    need_date:
+        type: date
+        comment: 需求日期
+    end_date:
+        type: date
+        comment: 截止日期
+    inventory_code:
+        type: string
+        size: 64
+        comment: 存货编码
+    product_name:
+        type: string
+        size: 64
+        comment: 物料名称
+    type:
+        type: string
+        size: 64
+        comment: 规格型号
+    unit:
+        type: integer
+        size: 11
+        comment: 单位
+    need_quantity:
+        type: integer
+        size: 11
+        comment: 总需求量
+    quantity:
+        type: integer
+        size: 11
+        comment: 子件数量
+    purchase_quantity:
+        type: integer
+        size: 11
+        comment: 请购数量
+    confirm_quantity:
+        type: integer
+        size: 11
+        comment: 确认数量
+    assignment_time:
+        type: datetime
+        comment: 分派时间
+    buy_person:
+        type: integer
+        size: 11
+        comment: 采购员
+    buy_time:
+        type: datetime
+        comment: 下单时间
+    arrival_time:
+        type: datetime
+        comment: 到货时间
+    receive_time:
+        type: datetime
+        comment: 接收时间
+    purchase_type:
+        type: integer
+        size: 4
+        comment: 请购类别:0=面向库存,1=面向订单
+    file:
+        type: string
+        size: 1024
+        comment: 附件
+    remarks:
+        type: text
+        comment: 备注

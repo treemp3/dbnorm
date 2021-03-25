@@ -1,0 +1,37 @@
+table: m_design_boms
+comment: 设计BOM明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 母件BOM
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    inventory_code:
+        type: string
+        size: 64
+        comment: 存货编码
+    name:
+        type: string
+        size: 64
+        comment: 存货名称
+    type:
+        type: string
+        size: 64
+        comment: 规格型号
+    unit:
+        type: integer
+        size: 11
+        comment: 计量单位
+    quantity:
+        type: integer
+        size: 11
+        comment: 基本用量
+    remarks:
+        type: text
+        comment: 备注

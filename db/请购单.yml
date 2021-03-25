@@ -1,0 +1,66 @@
+table: mms_purchase
+comment: 请购单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    check_status:
+        type: integer
+        size: 4
+        comment: 审核状态:0=未审核,1=已审核
+    unusual_status:
+        type: integer
+        size: 4
+        comment: 异常状态:0=正常,1=异常,2=异常已回复
+    purchase_type:
+        type: integer
+        size: 4
+        comment: 请购类别:0=面向库存,1=面向订单
+    order_code:
+        type: string
+        size: 64
+        comment: 订单号
+    need_date:
+        type: date
+        comment: 需求日期
+    end_date:
+        type: date
+        comment: 截止日期
+    inventory_code:
+        type: integer
+        size: 11
+        comment: 产品名称
+    type:
+        type: string
+        size: 64
+        comment: 规格型号
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    unit:
+        type: integer
+        size: 11
+        comment: 单位
+    file:
+        type: string
+        size: 1024
+        comment: 附件
+    status:
+        type: integer
+        size: 4
+        comment: 状态:0=未请购,1=已接收,2=部分请购,3=已请购
+    check_person:
+        type: integer
+        size: 11
+        comment: 审核人
+    check_time:
+        type: datetime
+        comment: 审批时间
+    remarks:
+        type: text
+        comment: 备注
