@@ -8,10 +8,10 @@ field:
         type: string
         size: 64
         comment: 编码
-    design_boms_code:
+    order_code:
         type: string
         size: 64
-        comment: 子BOM编码
+        comment: 订单编码
     unusual_status:
         type: integer
         size: 4
@@ -20,11 +20,7 @@ field:
         type: integer
         size: 4
         comment: 变更标识:0=新增,1=变更,2=删除
-    bom_inventory_code:
-        type: string
-        size: 64
-        comment: 母件存货编码
-    boms_inventory_code:
+    inventory_code:
         type: string
         size: 64
         comment: 子件存货编码
@@ -36,34 +32,10 @@ field:
         type: integer
         size: 4
         comment: 请购状态:0=未请购,1=已请购
-    version:
-        type: integer
-        size: 4
-        comment: 版本
-    product_name:
-        type: string
-        size: 64
-        comment: 产品名称
-    type:
-        type: string
-        size: 64
-        comment: 型号规格
     quantity:
         type: integer
         size: 11
         comment: 子件用量
-    buy_quantity:
-        type: integer
-        size: 11
-        comment: 请购量
-    buy_quantitys:
-        type: integer
-        size: 11
-        comment: 已请购量
-    unit:
-        type: integer
-        size: 11
-        comment: 单位
     process_type:
         type: integer
         size: 4
