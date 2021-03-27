@@ -11,7 +11,7 @@ field:
     inventory_code:
         type: string
         size: 64
-        comment: 存货编码
+        comment: 母件编码
     name:
         type: string
         size: 64
@@ -23,7 +23,7 @@ field:
     unit:
         type: integer
         size: 11
-        comment: 单位名称
+        comment: 计量单位
     version:
         type: integer
         size: 11
