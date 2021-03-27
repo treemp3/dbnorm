@@ -8,10 +8,6 @@ field:
         type: integer
         size: 11
         comment: 母件BOM
-    code:
-        type: string
-        size: 64
-        comment: 编码
     inventory_code:
         type: string
         size: 64
