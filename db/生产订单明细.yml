@@ -58,10 +58,10 @@ field:
     machining_date:
         type: date
         comment: 机加日期
-    choice_design:
-        type: string
-        size: 1024
-        comment: 选择设计任务
+    bom_version:
+        type: integer
+        size: 11
+        comment: BOM版本
     sort:
         type: integer
         size: 4
