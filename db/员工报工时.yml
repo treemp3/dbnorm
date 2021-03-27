@@ -4,10 +4,10 @@ field:
     id:
         type: integer
         size: 11
-    pid:
-        type: integer
-        size: 11
-        comment: 作业计划
+    task_code:
+        type: string
+        size: 64
+        comment: 作业任务
     order_code:
         type: string
         size: 64
@@ -20,10 +20,6 @@ field:
         type: integer
         size: 11
         comment: 工时
-    total_hours:
-        type: integer
-        size: 11
-        comment: 总工时
     operate_by:
         type: integer
         size: 11
