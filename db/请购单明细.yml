@@ -77,6 +77,10 @@ field:
     assignment_time:
         type: datetime
         comment: 分派时间
+    vendor_code:
+        type: string
+        size: 64
+        comment: 供应商
     buy_person:
         type: integer
         size: 11
