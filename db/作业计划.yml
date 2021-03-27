@@ -1,5 +1,5 @@
-table: mes_operation_plan
-comment: 作业计划
+table: mes_task
+comment: 作业任务
 field:
     id:
         type: integer
@@ -16,18 +16,6 @@ field:
         type: string
         size: 64
         comment: 生产订单编码
-    bom_code:
-        type: string
-        size: 64
-        comment: 母件存货编码
-    boms_code:
-        type: string
-        size: 64
-        comment: 子件存货编码
-    route_code:
-        type: string
-        size: 64
-        comment: 工艺路线
     station_code:
         type: string
         size: 64
@@ -56,7 +44,7 @@ field:
     plan_status:
         type: integer
         size: 4
-        comment: 计划状态:0=未完成计划,1=已完成计划,2=待接收,3=合格,4=不合格
+        comment: 任务状态:0=未完成,1=已完成,2=待接收,3=合格,4=不合格
     remarks:
         type: text
         comment: 备注
