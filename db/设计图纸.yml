@@ -1,13 +1,21 @@
-table: pdm_design
-comment: 设计图纸
+table: pdm_document
+comment: 设计文档
 field:
     id:
         type: integer
         size: 11
+    order_code:
+        type: string
+        size: 64
+        comment: 订单编码
     work_id:
         type: integer
         size: 11
         comment: 设计任务
+    status:
+        type: integer
+        size: 11
+        comment: 状态:0=草稿,1=审核中,2=审核通过,3=审核失败
     drawing:
         type: string
         size: 1024
@@ -32,9 +40,20 @@ field:
         type: string
         size: 64
         comment: 物件
-    finish_time:
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
         type: datetime
-        comment: 完成时间
+        comment: 创建时间
+    check_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    check_time:
+        type: datetime
+        comment: 审核时间
     path:
         type: string
         size: 1024
