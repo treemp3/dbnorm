@@ -1,0 +1,43 @@
+table: mms_arrival
+comment: 采购到货单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    purchase_order_code:
+        type: string
+        size: 64
+        comment: 采购订单号
+    vendor_code:
+        type: string
+        size: 64
+        comment: 供应商
+    sale_person:
+        type: integer
+        size: 11
+        comment: 业务员
+    status:
+        type: integer
+        size: 4
+        comment: 状态:0=未审核,1=已审核
+    make_by:
+        type: integer
+        size: 11
+        comment: 制单人
+    make_date:
+        type: date
+        comment: 制单日期
+    check_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    check_date:
+        type: date
+        comment: 审核日期
+    remarks:
+        type: text
+        comment: 备注

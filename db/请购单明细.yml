@@ -102,6 +102,10 @@ field:
         type: string
         size: 1024
         comment: 附件
+    purchase_order_code:
+        type: string
+        size: 64
+        comment: 采购订单号
     remarks:
         type: text
         comment: 备注

@@ -1,0 +1,32 @@
+table: mes_report
+comment: 报工单
+field:
+    id:
+        type: integer
+        size: 11
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单编码
+    inventory_code:
+        type: string
+        size: 64
+        comment: 产出物料
+    task_code:
+        type: string
+        size: 64
+        comment: 作业任务编码
+    operate_by:
+        type: integer
+        size: 11
+        comment: 作业人
+    quantity:
+        type: integer
+        size: 11
+        comment: 加工数量
+    finish_date:
+        type: date
+        comment: 实际完成日期
+    remarks:
+        type: text
+        comment: 备注

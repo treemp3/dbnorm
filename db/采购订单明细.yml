@@ -1,0 +1,18 @@
+table: mms_purchase_orders
+comment: 采购订单明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 采购订单号
+    inventory_code:
+        type: string
+        size: 64
+        comment: 存货编码
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
