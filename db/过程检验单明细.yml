@@ -1,0 +1,25 @@
+table: qms_inspects
+comment: 过程检验单明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属检验单
+    schemes_code:
+        type: string
+        size: 64
+        comment: 质检项
+    standard_value:
+        type: string
+        size: 64
+        comment: 标准值
+    real_value:
+        type: string
+        size: 64
+        comment: 实测值
+    remarks:
+        type: text
+        comment: 备注

@@ -1,0 +1,81 @@
+table: qms_defective
+comment: 不合格品
+field:
+    id:
+        type: integer
+        size: 11
+    deal_method:
+        type: integer
+        size: 4
+        comment: 处理办法:1=返工,2=报废,3=让步接收
+    reason:
+        type: integer
+        size: 4
+        comment: 不合格原因:1=技术原因,2=生产原因
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单
+    procedure_id:
+        type: integer
+        size: 11
+        comment: 工序
+    inventory_code:
+        type: string
+        size: 64
+        comment: 产出物料
+    task_code:
+        type: string
+        size: 64
+        comment: 作业任务
+    report_code:
+        type: string
+        size: 64
+        comment: 报工单
+    inspect_code:
+        type: string
+        size: 64
+        comment: 检验单
+    check_by:
+        type: integer
+        size: 11
+        comment: 检验人
+    check_time:
+        type: datetime
+        comment: 检验时间
+    rework_by:
+        type: integer
+        size: 11
+        comment: 返工人
+    rework_time:
+        type: datetime
+        comment: 返工时间
+    recheck_status:
+        type: integer
+        size: 4
+        comment: 复检状态:1=不合格,2=合格
+    recheck_time:
+        type: datetime
+        comment: 复检时间
+    audit_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    audit_time:
+        type: datetime
+        comment: 审核时间
+    audit_status:
+        type: integer
+        size: 4
+        comment: 审核状态:1=未审核,2=已审核
+    audit_opinion:
+        type: string
+        size: 256
+        comment: 审核意见
+    remarks:
+        type: text
+        comment: 备注

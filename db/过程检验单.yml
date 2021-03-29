@@ -1,0 +1,55 @@
+table: qms_inspect
+comment: 过程检验单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单号
+    procedure_id:
+        type: integer
+        size: 11
+        comment: 工序
+    inventory_code:
+        type: string
+        size: 64
+        comment: 产出物料
+    task_code:
+        type: string
+        size: 64
+        comment: 作业任务编码
+    report_code:
+        type: string
+        size: 64
+        comment: 报工单编码
+    check_result:
+        type: integer
+        size: 4
+        comment: 检验结果:0=合格,1=部分合格,2=不合格
+    check_quantity:
+        type: integer
+        size: 11
+        comment: 检验数量
+    check_by:
+        type: integer
+        size: 11
+        comment: 检验人
+    check_time:
+        type: datetime
+        comment: 检验时间
+    recheck_status:
+        type: integer
+        size: 4
+        comment: 复检状态:0=无需复检,1=不合格,2=合格
+    recheck_time:
+        type: datetime
+        comment: 复检时间
+    remarks:
+        type: text
+        comment: 备注
