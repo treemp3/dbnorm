@@ -31,6 +31,14 @@ field:
     finish_date:
         type: date
         comment: 实际完成日期
+    status:
+        type: integer
+        size: 4
+        comment: 状态:0=未检验,1=部分检验,2=已检验,3=已关闭
+    check_quantity:
+        type: integer
+        size: 11
+        comment: 已检数量
     remarks:
         type: text
         comment: 备注
