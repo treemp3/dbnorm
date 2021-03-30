@@ -11,15 +11,19 @@ field:
     order_code:
         type: string
         size: 64
-        comment: 生产订单编码
+        comment: 生产订单
     inventory_code:
         type: string
         size: 64
         comment: 产出物料
+    procedure_code:
+        type: string
+        size: 64
+        comment: 工序
     task_code:
         type: string
         size: 64
-        comment: 作业任务编码
+        comment: 作业任务
     operate_by:
         type: integer
         size: 11
