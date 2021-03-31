@@ -1,0 +1,67 @@
+table: mms_deliverys
+comment: 领料配送单明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属配送单
+    status:
+        type: integer
+        size: 4
+        comment: 配送状态:0=未配送,1=部分配送,2=已配送
+    receive_status:
+        type: integer
+        size: 4
+        comment: 收料状态:0=未收料,1=部分收料,2=已收料
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单
+    inventory_code:
+        type: string
+        size: 64
+        comment: 物料编码
+    inventory_quantity:
+        type: integer
+        size: 11
+        comment: 库存数量
+    require_quantity:
+        type: integer
+        size: 11
+        comment: 要求配送数量
+    delivered_quantity:
+        type: integer
+        size: 11
+        comment: 已配送数量
+    delivery_quantity:
+        type: integer
+        size: 11
+        comment: 本次配送数量
+    received_quantity:
+        type: integer
+        size: 11
+        comment: 累计收料数量
+    receive_quantity:
+        type: integer
+        size: 11
+        comment: 本次收料数量
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    receive_by:
+        type: integer
+        size: 11
+        comment: 收料人
+    receive_time:
+        type: datetime
+        comment: 收料时间
+    remarks:
+        type: text
+        comment: 备注

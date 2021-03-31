@@ -62,6 +62,14 @@ field:
         type: integer
         size: 11
         comment: BOM版本
+    bom_status:
+        type: integer
+        size: 4
+        comment: BOM状态:0=未同步,1=已同步
+    delivery_status:
+        type: integer
+        size: 4
+        comment: 配送状态:0=未提报,1=已提报
     sort:
         type: integer
         size: 4

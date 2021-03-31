@@ -1,0 +1,54 @@
+table: mms_delivery
+comment: 领料配送单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 编码
+    order_code:
+        type: string
+        size: 64
+        comment: 生产订单
+    inventory_code:
+        type: string
+        size: 64
+        comment: 物料编码
+    status:
+        type: integer
+        size: 4
+        comment: 配送状态:0=未配送,1=部分配送,2=已配送
+    receive_status:
+        type: integer
+        size: 4
+        comment: 收料状态:0=未收料,1=部分收料,2=已收料
+    plan_type:
+        type: integer
+        size: 4
+        comment: 计划类别:0=基于BOM,1=补料,2=自定义
+    place:
+        type: string
+        size: 128
+        comment: 配送地点
+    end_date:
+        type: date
+        comment: 截止日期
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    receive_by:
+        type: integer
+        size: 11
+        comment: 收料人
+    receive_time:
+        type: datetime
+        comment: 收料时间
+    remarks:
+        type: text
+        comment: 备注
