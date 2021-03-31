@@ -1,0 +1,48 @@
+table: iot_company
+comment: 公司信息
+field:
+    id:
+        type: integer
+        size: 11
+    name:
+        type: string
+        size: 64
+        comment: 名称
+    phone:
+        type: string
+        size: 64
+        comment: 电话
+    address:
+        type: string
+        size: 1024
+        comment: 地址
+    logo:
+        type: string
+        size: 1024
+        comment: LOGO
+    about_us:
+        type: text
+        comment: 简介
+    longitude:
+        type: decimal
+        size: 9
+        scale: 6
+        comment: 经度
+    latitude:
+        type: decimal
+        size: 9
+        scale: 6
+        comment: 纬度
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
+    remarks:
+        type: text
+        comment: 备注
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

@@ -1,0 +1,39 @@
+table: iot_part
+comment: 备品配件
+field:
+    id:
+        type: integer
+        size: 11
+    name:
+        type: string
+        size: 64
+        comment: 配件名称
+    model:
+        type: string
+        size: 64
+        comment: 配件型号
+    equipment_model:
+        type: string
+        size: 64
+        comment: 设备型号
+    picture:
+        type: string
+        size: 1024
+        comment: 图片
+    quantity:
+        type: integer
+        size: 11
+        comment: 剩余数量
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
+    remarks:
+        type: text
+        comment: 备注
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

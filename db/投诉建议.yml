@@ -1,0 +1,31 @@
+table: iot_suggest
+comment: 投诉建议
+field:
+    id:
+        type: integer
+        size: 11
+    equipment_id:
+        type: integer
+        size: 11
+        comment: 关联设备
+    content:
+        type: text
+        comment: 内容
+    name:
+        type: string
+        size: 64
+        comment: 姓名
+    phone:
+        type: string
+        size: 64
+        comment: 电话
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

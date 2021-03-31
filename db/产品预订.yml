@@ -1,0 +1,59 @@
+table: iot_preorder
+comment: 订购记录
+field:
+    id:
+        type: integer
+        size: 11
+    type:
+        type: integer
+        size: 4
+        comment: 订购类型:0=产品,1=配件
+    equipment_id:
+        type: integer
+        size: 11
+        comment: 订购产品
+    part_id:
+        type: integer
+        size: 11
+        comment: 订购配件
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    name:
+        type: string
+        size: 64
+        comment: 姓名
+    phone:
+        type: string
+        size: 64
+        comment: 电话
+    address:
+        type: string
+        size: 1024
+        comment: 地址
+    is_contact:
+        type: integer
+        size: 1
+        comment: 是否联系
+    is_pay:
+        type: integer
+        size: 1
+        comment: 是否成交
+    sale_person:
+        type: string
+        size: 64
+        comment: 销售内勤
+    remarks:
+        type: text
+        comment: 备注
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间

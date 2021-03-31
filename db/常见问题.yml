@@ -1,0 +1,23 @@
+table: iot_faq
+comment: 常见问题
+field:
+    id:
+        type: integer
+        size: 11
+    title:
+        type: string
+        size: 256
+        comment: 标题
+    content:
+        type: text
+        comment: 内容
+    org_id:
+        type: integer
+        size: 11
+        comment: 所属组织
+    create_time:
+        type: timestamp
+        comment: 创建时间
+    update_time:
+        type: timestamp
+        comment: 更新时间
