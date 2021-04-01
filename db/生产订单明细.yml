@@ -85,7 +85,7 @@ field:
     status:
         type: integer
         size: 4
-        comment: 请购状态:0=未请购,1=未同步,2=已关闭,3=待请购,4=已请购
+        comment: 请购状态:0=未请购,1=已请购,2=已关闭
     design_status:
         type: integer
         size: 4
