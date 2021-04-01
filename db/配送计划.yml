@@ -1,17 +1,9 @@
-table: mms_delivery
-comment: 领料配送单
+table: mms_delivery_plan
+comment: 配送计划
 field:
     id:
         type: integer
         size: 11
-    plan_id:
-        type: integer
-        size: 11
-        comment: 配送计划
-    code:
-        type: string
-        size: 64
-        comment: 编码
     order_code:
         type: string
         size: 64
@@ -23,7 +15,11 @@ field:
     status:
         type: integer
         size: 4
-        comment: 收料状态:0=未收料,1=部分收料,2=已收料
+        comment: 配送状态:0=未配送,1=部分配送,2=已配送
+    plan_type:
+        type: integer
+        size: 4
+        comment: 计划类别:0=基于BOM,1=补料,2=自定义
     place:
         type: string
         size: 128
