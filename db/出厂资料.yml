@@ -4,10 +4,10 @@ field:
     id:
         type: integer
         size: 11
-    order_code:
-        type: string
-        size: 64
-        comment: 订单编码
+    orders_id:
+        type: integer
+        size: 11
+        comment: 订单子表ID
     name:
         type: string
         size: 64
