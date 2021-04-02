@@ -4,18 +4,14 @@ field:
     id:
         type: integer
         size: 11
-    code:
-        type: string
-        size: 64
-        comment: 编码
+    orders_id:
+        type: integer
+        size: 11
+        comment: 订单子表ID
     status:
         type: integer
         size: 4
         comment: 状态:0=未派工,1=已派工,2=未报工,3=部分报工,4=已报工,5=生产中,6=待检验,7=质检完成,8=暂停中,9=异常,10=终止
-    order_code:
-        type: string
-        size: 64
-        comment: 生产订单编码
     station_code:
         type: string
         size: 64
@@ -24,9 +20,9 @@ field:
         type: integer
         size: 11
         comment: 作业人
-    procedure_code:
-        type: string
-        size: 64
+    procedure_id:
+        type: integer
+        size: 11
         comment: 工序
     team_code:
         type: string
@@ -45,6 +41,9 @@ field:
         type: integer
         size: 4
         comment: 任务状态:0=未完成,1=已完成,2=待接收,3=合格,4=不合格
+    dispatch_time:
+        type: datetime
+        comment: 派工时间
     remarks:
         type: text
         comment: 备注
