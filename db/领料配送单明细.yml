@@ -16,10 +16,6 @@ field:
         type: string
         size: 64
         comment: 物料编码
-    require_quantity:
-        type: integer
-        size: 11
-        comment: 要求配送数量
     delivery_quantity:
         type: integer
         size: 11
