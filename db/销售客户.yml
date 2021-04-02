@@ -20,13 +20,13 @@ field:
         type: string
         size: 64
         comment: 客户联系人
+    contact_time:
+        type: datetime
+        comment: 最后联系时间
     amount:
         type: integer
         size: 11
         comment: 预计金额
-    contact_time:
-        type: datetime
-        comment: 最后联系时间
     expect_date:
         type: date
         comment: 预计签单日期
