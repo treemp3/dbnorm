@@ -8,19 +8,15 @@ field:
         type: integer
         size: 11
         comment: 所属订单
-    code:
-        type: string
-        size: 64
-        comment: 编码
     check_status:
         type: integer
         size: 4
         comment: 订单状态:0=未审核,1=已审核
-    product:
-        type: string
-        size: 64
-        comment: 产品序号
-    production_line_code:
+    design_status:
+        type: integer
+        size: 4
+        comment: 设计状态:0=未完成,1=已完成
+    line_code:
         type: string
         size: 64
         comment: 产线编码
@@ -28,26 +24,11 @@ field:
         type: string
         size: 64
         comment: 存货编码
-    inventory_name:
-        type: string
-        size: 64
-        comment: 存货名称
-    type:
-        type: string
-        size: 64
-        comment: 型号规格
     quantity:
-        type: integer
-        size: 11
+        type: decimal
+        size: 16
+        scale: 2
         comment: 数量
-    unit:
-        type: string
-        size: 64
-        comment: 单位
-    is_entered:
-        type: integer
-        size: 1
-        comment: 生产计划是否录入
     need_date:
         type: date
         comment: 需求日期
@@ -70,34 +51,18 @@ field:
         type: integer
         size: 11
         comment: BOM版本
-    bom_status:
+    is_bom:
         type: integer
-        size: 4
-        comment: BOM状态:0=未同步,1=已同步
-    delivery_status:
+        size: 1
+        comment: 生产BOM标记
+    purchase_flag:
         type: integer
-        size: 4
-        comment: 配送状态:0=未提报,1=已提报
-    sort:
+        size: 1
+        comment: 请购标记
+    delivery_flag:
         type: integer
-        size: 4
-        comment: 排序
-    status:
-        type: integer
-        size: 4
-        comment: 请购状态:0=未请购,1=已请购,2=已关闭
-    design_status:
-        type: integer
-        size: 4
-        comment: 设计状态:0=未完成,1=已完成
-    guid:
-        type: string
-        size: 128
-        comment: GUID
-    contracts_guid:
-        type: string
-        size: 128
-        comment: 合同子表GUID
+        size: 1
+        comment: 配送标记
     file:
         type: string
         size: 1024
@@ -122,6 +87,10 @@ field:
         type: string
         size: 1024
         comment: 客户特殊要求
+    sort:
+        type: integer
+        size: 4
+        comment: 排序
     remarks:
         type: text
         comment: 备注
