@@ -4,10 +4,6 @@ field:
     id:
         type: integer
         size: 11
-    code:
-        type: string
-        size: 64
-        comment: 编码
     name:
         type: string
         size: 64
