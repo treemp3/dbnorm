@@ -12,10 +12,6 @@ field:
         type: string
         size: 64
         comment: 编码
-    order_code:
-        type: string
-        size: 64
-        comment: 生产订单
     inventory_code:
         type: string
         size: 64
