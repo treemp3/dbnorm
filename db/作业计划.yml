@@ -37,10 +37,6 @@ field:
     end_date:
         type: date
         comment: 截止日期
-    plan_status:
-        type: integer
-        size: 4
-        comment: 任务状态:0=未完成,1=已完成,2=待接收,3=合格,4=不合格
     dispatch_time:
         type: datetime
         comment: 派工时间
