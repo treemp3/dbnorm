@@ -1,0 +1,25 @@
+table: crm_transfer
+comment: 销售转移记录
+field:
+    id:
+        type: integer
+        size: 11
+    sale_id:
+        type: integer
+        size: 11
+        comment: 所属客户
+    transfer_by:
+        type: integer
+        size: 11
+        comment: 转移人
+    receive_by:
+        type: integer
+        size: 11
+        comment: 接收人
+    reason:
+        type: string
+        size: 256
+        comment: 转移原因
+    transfer_time:
+        type: datetime
+        comment: 转移时间

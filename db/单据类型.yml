@@ -1,0 +1,14 @@
+table: m_vouch_type
+comment: 单据类型
+field:
+    id:
+        type: integer
+        size: 11
+    name:
+        type: string
+        size: 64
+        comment: 名称
+    flag:
+        type: integer
+        size: 4
+        comment: 收发标记:0=收货,1=发货

@@ -1,0 +1,40 @@
+table: m_outin_log
+comment: 收发记录
+field:
+    id:
+        type: integer
+        size: 11
+    flag:
+        type: integer
+        size: 4
+        comment: 收发标记:0=收货,1=发货
+    vouch_type:
+        type: integer
+        size: 4
+        comment: 单据类型
+    vouch_code:
+        type: string
+        size: 64
+        comment: 单据号
+    warehouse_code:
+        type: string
+        size: 64
+        comment: 仓库编码
+    vendor_code:
+        type: string
+        size: 64
+        comment: 供应商
+    customer_code:
+        type: string
+        size: 64
+        comment: 客户
+    create_by:
+        type: integer
+        size: 11
+        comment: 制单人
+    create_time:
+        type: datetime
+        comment: 制单时间
+    remarks:
+        type: text
+        comment: 备注
