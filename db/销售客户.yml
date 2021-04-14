@@ -4,10 +4,6 @@ field:
     id:
         type: integer
         size: 11
-    code:
-        type: string
-        size: 64
-        comment: 编码
     name:
         type: string
         size: 64
@@ -15,7 +11,7 @@ field:
     type:
         type: integer
         size: 4
-        comment: 客户分类:0=不重要,1=一般,2=重要
+        comment: 客户分类:0=A,1=B,2=C
     contact_person:
         type: string
         size: 64
@@ -30,6 +26,10 @@ field:
     expect_date:
         type: date
         comment: 预计签单日期
+    industry:
+        type: string
+        size: 64
+        comment: 行业
     create_by:
         type: integer
         size: 11
