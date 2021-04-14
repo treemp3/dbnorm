@@ -24,6 +24,10 @@ field:
         type: integer
         size: 11
         comment: 要求配送数量
+    delivered_quantity:
+        type: integer
+        size: 11
+        comment: 已配送数量
     remarks:
         type: text
         comment: 备注
