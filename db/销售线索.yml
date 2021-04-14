@@ -8,9 +8,9 @@ field:
         type: string
         size: 64
         comment: 线索名称
-    sale_code:
-        type: string
-        size: 64
+    sale_id:
+        type: integer
+        size: 11
         comment: 所属客户
     contact_person:
         type: string
