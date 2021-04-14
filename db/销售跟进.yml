@@ -7,10 +7,10 @@ field:
     type:
         type: integer
         size: 4
-        comment: 跟进阶段:0=未开始,1=进行中,2=已结束
-    sale_code:
-        type: string
-        size: 64
+        comment: 跟进阶段:0=未跟进,1=电话沟通,2=拜访,3=无意向,4=解决方案,5=商务谈判,6=成交
+    sale_id:
+        type: integer
+        size: 11
         comment: 所属客户
     clue_id:
         type: integer
@@ -22,7 +22,7 @@ field:
     create_by:
         type: integer
         size: 11
-        comment: 创建人
+        comment: 跟进人
     create_time:
         type: datetime
-        comment: 创建时间
+        comment: 跟进时间
