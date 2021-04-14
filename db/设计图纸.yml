@@ -54,10 +54,6 @@ field:
     check_time:
         type: datetime
         comment: 审核时间
-    path:
-        type: string
-        size: 1024
-        comment: 图片路径
     remarks:
         type: text
         comment: 备注
