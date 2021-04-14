@@ -7,7 +7,7 @@ field:
     pid:
         type: integer
         size: 11
-        comment: 采购订单号
+        comment: 所属采购订单
     inventory_code:
         type: string
         size: 64
