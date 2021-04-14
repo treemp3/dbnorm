@@ -38,6 +38,10 @@ field:
     rework_time:
         type: datetime
         comment: 返工时间
+    rework_status:
+        type: integer
+        size: 4
+        comment: 返工状态:1=返工中,2=已完工,3=合格
     recheck_status:
         type: integer
         size: 4
