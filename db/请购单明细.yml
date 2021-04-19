@@ -58,6 +58,10 @@ field:
         type: integer
         size: 11
         comment: 确认数量
+    received_quantity:
+        type: integer
+        size: 11
+        comment: 已到货数量
     assignment_by:
         type: integer
         size: 11
