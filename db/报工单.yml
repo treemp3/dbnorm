@@ -27,7 +27,7 @@ field:
     quantity:
         type: integer
         size: 11
-        comment: 加工数量
+        comment: 报工数量
     finish_date:
         type: date
         comment: 实际完成日期
