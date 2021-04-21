@@ -39,6 +39,10 @@ field:
         type: integer
         size: 4
         comment: 线索状态:0=未开始,1=进行中,2=已结束
+    file:
+        type: string
+        size: 1024
+        comment: 附件
     remarks:
         type: text
         comment: 备注

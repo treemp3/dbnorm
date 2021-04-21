@@ -16,6 +16,10 @@ field:
         type: string
         size: 64
         comment: 客户联系人
+    contact_post:
+        type: string
+        size: 64
+        comment: 联系人职位
     contact_time:
         type: datetime
         comment: 最后联系时间
@@ -61,6 +65,10 @@ field:
         type: string
         size: 1024
         comment: 地址
+    url:
+        type: string
+        size: 1024
+        comment: 网址
     e_mail:
         type: string
         size: 64
@@ -77,14 +85,42 @@ field:
         type: integer
         size: 11
         comment: 业务员
+    business_scope:
+        type: string
+        size: 256
+        comment: 经营范围
     inventory:
         type: string
         size: 1024
         comment: 相关产品
+    customer_quantity:
+        type: string
+        size: 64
+        comment: 客户人数
+    register_money:
+        type: string
+        size: 64
+        comment: 注册资金
+    project:
+        type: string
+        size: 256
+        comment: 项目
+    qualification:
+        type: string
+        size: 256
+        comment: 资质
+    honor:
+        type: string
+        size: 256
+        comment: 荣誉
     reason:
         type: string
         size: 1024
         comment: 转移原因
+    file:
+        type: string
+        size: 1024
+        comment: 附件
     is_sea:
         type: integer
         size: 1
