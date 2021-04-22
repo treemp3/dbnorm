@@ -11,16 +11,20 @@ field:
     status:
         type: integer
         size: 4
-        comment: 状态:0=未派工,1=已派工,2=未报工,3=部分报工,4=已报工,5=生产中,6=待检验,7=质检完成,8=暂停中,9=异常,10=终止
+        comment: 生产状态:0=未开始,1=生产中,2=暂停中,3=终止
+    task_status:
+        type: integer
+        size: 4
+        comment: 派工状态:0=未派工,1=已派工
     station_code:
         type: string
         size: 64
         comment: 加工工位
     operate_by:
-        type: integer
-        size: 11
+        type: string
+        size: 128
         comment: 作业人
-    procedure_id:
+    routes_id:
         type: integer
         size: 11
         comment: 工序
@@ -40,6 +44,10 @@ field:
     dispatch_time:
         type: datetime
         comment: 派工时间
+    complete_probability:
+        type: string
+        size: 64
+        comment: 齐套率
     remarks:
         type: text
         comment: 备注
