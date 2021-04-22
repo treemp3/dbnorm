@@ -12,6 +12,10 @@ field:
         type: string
         size: 64
         comment: 工序编码
+    procedure_name:
+        type: string
+        size: 64
+        comment: 工序名称
     pre_procedure:
         type: string
         size: 256
@@ -32,10 +36,6 @@ field:
         type: integer
         size: 4
         comment: 时间单位:1=分钟,2=小时,3=天,4=月,5=年
-    output_inventory:
-        type: string
-        size: 256
-        comment: 产出物料
     defective_item:
         type: string
         size: 256
