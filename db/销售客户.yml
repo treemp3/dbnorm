@@ -14,7 +14,7 @@ field:
         comment: 客户分类:0=A,1=B,2=C
     contact_person:
         type: string
-        size: 64
+        size: 1024
         comment: 客户联系人
     contact_post:
         type: string
@@ -34,13 +34,6 @@ field:
         type: string
         size: 64
         comment: 行业
-    create_by:
-        type: integer
-        size: 11
-        comment: 创建人
-    create_time:
-        type: datetime
-        comment: 创建时间
     org_id:
         type: integer
         size: 11
@@ -125,6 +118,13 @@ field:
         type: integer
         size: 1
         comment: 是否公海客户
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
     remarks:
         type: text
         comment: 备注
