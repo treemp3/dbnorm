@@ -80,7 +80,7 @@ field:
         comment: 业务员
     business_scope:
         type: string
-        size: 256
+        size: 1024
         comment: 经营范围
     inventory:
         type: string
