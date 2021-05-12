@@ -1,0 +1,56 @@
+table: erp_fund
+comment: 账款列表
+field:
+    id:
+        type: integer
+        size: 11
+    type:
+        type: integer
+        size: 4
+        comment: 账款类型:0=预付款,1=投用款,2=验收款,3=质保款
+    contract_code:
+        type: string
+        size: 64
+        comment: 合同号
+    contract_name:
+        type: string
+        size: 64
+        comment: 合同名称
+    amount:
+        type: decimal
+        size: 32
+        scale: 2
+        comment: 订单总额
+    back_amount:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 已收金额
+    expire_date:
+        type: date
+        comment: 账款到期日
+    customer_name:
+        type: string
+        size: 64
+        comment: 客户名称
+    customer_contact:
+        type: string
+        size: 64
+        comment: 客户联系人
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    check_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    check_time:
+        type: datetime
+        comment: 审核时间

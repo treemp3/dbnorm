@@ -1,0 +1,30 @@
+table: crm_receipts
+comment: 回执单明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属回执单
+    contract_code:
+        type: string
+        size: 64
+        comment: 合同号
+    code:
+        type: string
+        size: 64
+        comment: 商品编码
+    name:
+        type: string
+        size: 64
+        comment: 商品名称
+    type:
+        type: string
+        size: 64
+        comment: 规格型号
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量

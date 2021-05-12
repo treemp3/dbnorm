@@ -1,0 +1,43 @@
+table: erp_invoices
+comment: 开票管理明细
+field:
+    id:
+        type: integer
+        size: 11
+    pid:
+        type: integer
+        size: 11
+        comment: 所属开票信息
+    code:
+        type: string
+        size: 64
+        comment: 商品编码
+    name:
+        type: string
+        size: 64
+        comment: 商品名称
+    type:
+        type: string
+        size: 64
+        comment: 规格型号
+    unit:
+        type: string
+        size: 32
+        comment: 单位
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    tax_rate:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 税率
+    tax_amount:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 税额
+    remarks:
+        type: text
+        comment: 备注

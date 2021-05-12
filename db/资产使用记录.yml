@@ -1,0 +1,32 @@
+table: wms_asset_log
+comment: 资产使用记录
+field:
+    id:
+        type: integer
+        size: 11
+    project:
+        type: string
+        size: 64
+        comment: 项目
+    asset:
+        type: string
+        size: 64
+        comment: 资产
+    type:
+        type: integer
+        size: 4
+        comment: 类型:0=调拨,1=归还
+    operate_by:
+        type: integer
+        size: 11
+        comment: 操作人
+    operate_time:
+        type: datetime
+        comment: 操作时间
+    check_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    check_time:
+        type: datetime
+        comment: 审核时间

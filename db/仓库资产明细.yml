@@ -1,0 +1,50 @@
+table: wms_asset
+comment: 仓库资产明细
+field:
+    id:
+        type: integer
+        size: 11
+    warehouse:
+        type: string
+        size: 64
+        comment: 仓库
+    name:
+        type: string
+        size: 64
+        comment: 品名
+    code:
+        type: string
+        size: 64
+        comment: 编号
+    type:
+        type: string
+        size: 64
+        comment: 规格型号
+    unit:
+        type: string
+        size: 32
+        comment: 单位
+    quantity:
+        type: integer
+        size: 11
+        comment: 数量
+    price:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 资产原值
+    tax_price:
+        type: integer
+        size: 4
+        comment: 使用性质:0=自有,1=租赁,2=借用
+    status:
+        type: integer
+        size: 4
+        comment: 目前性能状态:0=良好,1=失效,2=丢失
+    manage_by:
+        type: integer
+        size: 11
+        comment: 管理员
+    remarks:
+        type: text
+        comment: 备注

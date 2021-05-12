@@ -1,0 +1,34 @@
+table: hr_attendance
+comment: 出勤记录
+field:
+    id:
+        type: integer
+        size: 11
+    project:
+        type: string
+        size: 64
+        comment: 项目
+    user:
+        type: string
+        size: 64
+        comment: 员工
+    org:
+        type: string
+        size: 64
+        comment: 部门
+    month:
+        type: string
+        size: 16
+        comment: 月份
+    days:
+        type: decimal
+        size: 4
+        scale: 1
+        comment: 出勤天数
+    salary:
+        type: integer
+        size: 11
+        comment: 出勤工资
+    remarks:
+        type: text
+        comment: 备注

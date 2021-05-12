@@ -1,0 +1,29 @@
+table: erp_invoice
+comment: 开票管理
+field:
+    id:
+        type: integer
+        size: 11
+    type:
+        type: integer
+        size: 4
+        comment: 发票类型:0=普通发票,1=增值税发票
+    amount:
+        type: decimal
+        size: 32
+        scale: 2
+        comment: 发票总额
+    title:
+        type: string
+        size: 64
+        comment: 发票抬头
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间

@@ -1,0 +1,33 @@
+table: erp_otherfees
+comment: 其他费用记录
+field:
+    id:
+        type: integer
+        size: 11
+    project:
+        type: string
+        size: 64
+        comment: 项目
+    fee_type:
+        type: string
+        size: 64
+        comment: 费用类别
+    amount:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 金额（元）
+    create_date:
+        type: date
+        comment: 日期
+    handle_by:
+        type: integer
+        size: 11
+        comment: 经手人
+    check_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    remarks:
+        type: text
+        comment: 备注

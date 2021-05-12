@@ -1,0 +1,36 @@
+table: crm_receipt
+comment: 回执单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 回执单号
+    receive_company:
+        type: string
+        size: 64
+        comment: 收货单位
+    receive_by:
+        type: string
+        size: 64
+        comment: 收货人姓名
+    receive_phone:
+        type: string
+        size: 64
+        comment: 联系电话
+    receive_address:
+        type: string
+        size: 1024
+        comment: 收货地址
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间

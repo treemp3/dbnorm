@@ -1,0 +1,55 @@
+table: crm_price_list
+comment: 报价单
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: string
+        size: 64
+        comment: 报价单号
+    bid_date:
+        type: date
+        comment: 报价日期
+    customer_name:
+        type: string
+        size: 64
+        comment: 客户名称
+    customer_phone:
+        type: string
+        size: 64
+        comment: 客户电话
+    customer_address:
+        type: string
+        size: 1024
+        comment: 客户地址
+    customer_contact:
+        type: string
+        size: 32
+        comment: 客户联系人
+    customer_mail:
+        type: string
+        size: 32
+        comment: 客户邮箱
+    vendor_contact:
+        type: string
+        size: 32
+        comment: 供货联系人
+    vendor_phone:
+        type: string
+        size: 64
+        comment: 供货电话
+    vendor_mail:
+        type: string
+        size: 32
+        comment: 供货邮箱
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
