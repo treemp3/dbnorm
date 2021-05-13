@@ -33,11 +33,15 @@ field:
         size: 16
         scale: 2
         comment: 税率
-    tax_amount:
+    price:
         type: decimal
         size: 16
         scale: 2
-        comment: 税额
+        comment: 单价
+    back_money:
+        type: string
+        size: 64
+        comment: 回款流水
     remarks:
         type: text
         comment: 备注

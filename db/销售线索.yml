@@ -54,18 +54,33 @@ field:
         type: integer
         size: 4
         comment: 招标状态:0=未发标,1=已发标,2=已购标书,3=已交标书,4=开标,5=结束
+    bid_org:
+        type: string
+        size: 64
+        comment: 招标机构
     bid_amount:
         type: decimal
         size: 32
         scale: 2
         comment: 标书金额
-    bid_org:
+    bid_doc_fee:
+        type: string
+        size: 32
+        comment: 标书费
+    deposit:
+        type: string
+        size: 32
+        comment: 保证金
+    duty_by:
         type: string
         size: 64
-        comment: 招标机构
+        comment: 责任人
     buy_date:
         type: date
         comment: 标书购买截止日期
+    bid_expire_date:
+        type: date
+        comment: 报价截止日期
     start_date:
         type: date
         comment: 投标开始日期
@@ -91,3 +106,8 @@ field:
         type: integer
         size: 1
         comment: 是否参与
+    is_win:
+        type: integer
+        size: 1
+        comment: 是否中标
+

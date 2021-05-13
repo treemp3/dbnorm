@@ -4,6 +4,10 @@ field:
     id:
         type: integer
         size: 11
+    code:
+        type: string
+        size: 64
+        comment: 发票号
     type:
         type: integer
         size: 4

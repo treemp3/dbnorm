@@ -1,0 +1,40 @@
+table: erp_verification
+comment: 账款核销
+field:
+    id:
+        type: integer
+        size: 11
+    code:
+        type: integer
+        size: 4
+        comment: 审核状态:0=未审核,1=已审核
+    invoice:
+        type: string
+        size: 64
+        comment: 发票明细
+    back_code:
+        type: string
+        size: 64
+        comment: 回款编号
+    back_amount:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 核销金额
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间
+    check_by:
+        type: integer
+        size: 11
+        comment: 审核人
+    check_time:
+        type: datetime
+        comment: 审核时间
