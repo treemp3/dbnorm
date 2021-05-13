@@ -1,0 +1,38 @@
+table: crm_bid_result
+comment: 中标结果
+field:
+    id:
+        type: integer
+        size: 11
+    project:
+        type: string
+        size: 64
+        comment: 所属项目
+    company_name:
+        type: string
+        size: 64
+        comment: 企业名称
+    price:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 报价
+    score:
+        type: decimal
+        size: 8
+        scale: 2
+        comment: 评分
+    is_win:
+        type: integer
+        size: 1
+        comment: 是否中标
+    remarks:
+        type: text
+        comment: 备注
+    create_by:
+        type: integer
+        size: 11
+        comment: 创建人
+    create_time:
+        type: datetime
+        comment: 创建时间

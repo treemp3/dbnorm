@@ -46,3 +46,48 @@ field:
     remarks:
         type: text
         comment: 备注
+    type:
+        type: integer
+        size: 4
+        comment: 项目类别:0=招标项目,1=一般项目
+    bid_status:
+        type: integer
+        size: 4
+        comment: 招标状态:0=未发标,1=已发标,2=已购标书,3=已交标书,4=开标,5=结束
+    bid_amount:
+        type: decimal
+        size: 32
+        scale: 2
+        comment: 标书金额
+    bid_org:
+        type: string
+        size: 64
+        comment: 招标机构
+    buy_date:
+        type: date
+        comment: 标书购买截止日期
+    start_date:
+        type: date
+        comment: 投标开始日期
+    end_date:
+        type: date
+        comment: 投标结束日期
+    open_date:
+        type: date
+        comment: 开标日期
+    invitation:
+        type: string
+        size: 1024
+        comment: 招标文件
+    bid_document:
+        type: string
+        size: 1024
+        comment: 标书
+    win_letter:
+        type: string
+        size: 1024
+        comment: 中标通知书
+    is_join:
+        type: integer
+        size: 1
+        comment: 是否参与

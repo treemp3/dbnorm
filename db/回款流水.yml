@@ -8,19 +8,10 @@ field:
         type: string
         size: 64
         comment: 回款编号
-    contract_code:
+    consumer:
         type: string
         size: 64
-        comment: 合同号
-    contract_name:
-        type: string
-        size: 64
-        comment: 合同名称
-    amount:
-        type: decimal
-        size: 32
-        scale: 2
-        comment: 订单总额
+        comment: 所属客户
     back_amount:
         type: decimal
         size: 16
@@ -33,20 +24,6 @@ field:
         type: string
         size: 128
         comment: 回款说明
-    in_account:
-        type: string
-        size: 64
-        comment: 转入账户
-    expire_date:
-        type: date
-        comment: 账款到期日
-    clearing_account:
-        type: string
-        size: 64
-        comment: 结算账户
-    remarks:
-        type: text
-        comment: 备注
     create_by:
         type: integer
         size: 11
@@ -54,10 +31,3 @@ field:
     create_time:
         type: datetime
         comment: 创建时间
-    check_by:
-        type: integer
-        size: 11
-        comment: 审核人
-    check_time:
-        type: datetime
-        comment: 审核时间

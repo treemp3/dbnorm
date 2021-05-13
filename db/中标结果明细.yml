@@ -1,5 +1,5 @@
 table: crm_bid_results
-comment: 投标结果明细
+comment: 中标结果明细
 field:
     id:
         type: integer
