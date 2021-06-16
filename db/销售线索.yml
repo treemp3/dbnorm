@@ -24,7 +24,7 @@ field:
         type: integer
         size: 11
         comment: 预计金额
-    sale_person:
+    business_person:
         type: integer
         size: 11
         comment: 业务员
@@ -63,11 +63,11 @@ field:
         size: 32
         scale: 2
         comment: 标书金额
-    bid_doc_fee:
+    bid_letter_amount:
         type: string
         size: 32
         comment: 标书费
-    deposit:
+    margin:
         type: string
         size: 32
         comment: 保证金
@@ -75,10 +75,10 @@ field:
         type: string
         size: 64
         comment: 责任人
-    buy_date:
+    buy_expire_date:
         type: date
         comment: 标书购买截止日期
-    bid_expire_date:
+    expire_date:
         type: date
         comment: 报价截止日期
     start_date:
@@ -90,11 +90,11 @@ field:
     open_date:
         type: date
         comment: 开标日期
-    invitation:
+    bid_file:
         type: string
         size: 1024
         comment: 招标文件
-    bid_document:
+    bid_letter:
         type: string
         size: 1024
         comment: 标书

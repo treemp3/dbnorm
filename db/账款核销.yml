@@ -4,7 +4,7 @@ field:
     id:
         type: integer
         size: 11
-    code:
+    audit_status:
         type: integer
         size: 4
         comment: 审核状态:0=未审核,1=已审核
@@ -21,6 +21,11 @@ field:
         size: 16
         scale: 2
         comment: 核销金额
+    amount:
+        type: decimal
+        size: 16
+        scale: 2
+        comment: 余额
     remarks:
         type: text
         comment: 备注

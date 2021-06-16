@@ -4,15 +4,15 @@ field:
     id:
         type: integer
         size: 11
-    project:
+    clue_id:
         type: string
         size: 64
         comment: 所属项目
-    company_name:
+    name:
         type: string
         size: 64
         comment: 企业名称
-    price:
+    quote:
         type: decimal
         size: 16
         scale: 2
